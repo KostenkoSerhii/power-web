@@ -7,17 +7,21 @@
 		float: left
 	&__nav
 		max-width: 1270/1840*100 + %
-		//position: absolute
 		padding-top: 20px
-		//left: 40.7%
-		//transform: translateX(-50%)
 		+ld
 			padding-top: 8px
 		+lg
 			padding-top: 15px
 		+dt
 			padding-top: 9px
-			//left: 39.7%
+		+m
+			position: absolute
+			width: 257px
+			right: -12px
+			background: $blue-d
+			top: 55px
+			padding-top: 0
+			max-width: 100%
 	&__right
 		position: absolute
 		top: 20px
@@ -26,6 +30,12 @@
 			top: 12px
 		+dt
 			top: 9px
+		+m
+			position: relative
+			top: 0
+			float: right
+			margin-right: 80px
+			padding-top: 4px
 	&__loc
 		// margin-top: 8px
 		margin-right: 46px
@@ -35,8 +45,43 @@
 			margin-right: 20px
 		+ds
 			margin-right: 10px
+		+r(1250)
+			margin-right: 25px
+		+m
+			display: none
 		//+dt
 		//	margin-top: 2px
+	&__nav-btn
+		display: none
+		cursor: pointer
+		position: absolute
+		padding-top: 6px
+		+trans
+		top: 8px
+		right: 12px
+		width: 40px
+		height: 20px
+		border-top: 3px solid $blue-d
+		border-bottom: 3px solid $blue-d
+		+m
+			display: block
+		span
+			display: block
+			height: 3px
+			background: $blue-d
+			+trans
+		&.is-active
+			border-top: 3px solid $orange
+			border-bottom: 3px solid $orange
+			span
+				background: $orange
+		&:before
+			content: ''
+			position: absolute
+			top: -5px
+			right: -5px
+			bottom: -5px
+			left: -5px
 .ndropdown
 	z-index: 2
 	position: absolute
@@ -48,11 +93,21 @@
 	font-size: 0
 	+ld
 		width: 1200px
+	+dm
+		width: 830px
+	+m
+		position: relative
+		top: 0
+		width: 100%
+		padding: 0
 	&__wrapper
 		+clr
 	&__left
 		width: 875/1470*100 + %
 		float: left
+		+m
+			float: none
+			width: 100%
 	&__right
 		width: 545/1470*100 + %
 		float: right
@@ -61,6 +116,10 @@
 		height: 485px
 		+ld
 			height: 378px
+		+dm
+			height: 265px
+		+m
+			display: none
 		svg
 			fill: $blue
 			font-size: 20px
@@ -72,19 +131,34 @@
 				font-size: 16px
 				left: -42px
 				margin-top: -8px
+			+dm
+				font-size: 13px
+				left: 27px
 	&__btn
 		position: absolute
 		bottom: 35px
 		left: 50%
 		transform: translateX(-50%)
+		+ld
+			bottom: 28px
+		+dm
+			bottom: 18px
 .dropitem
 	width: 25%
 	text-align: center
 	display: inline-block
 	vertical-align: top
 	margin-bottom: 25px
+	+dm
+		margin-bottom: 15px
+	+m
+		display: block
+		width: 100%
+		margin-bottom: 0
 	&--last-row
 		margin-bottom: 0
+		+dm
+			margin-bottom: 0
 	&__img
 		width: 184px
 		height: 169px
@@ -96,12 +170,26 @@
 		+ld
 			width: 144px
 			height: 136px
+		+dm
+			width: 100px
+			height: 90px
+		+m
+			display: none
 	&__text
 		color: $blue
 		font-size: 24px
 		line-height: 1.3
 		+ld
 			font-size: 18px
+		+dm
+			font-size: 15px
+		+m
+			display: block
+			text-align: left
+			padding: 10px  10px 10px 30px
+			background: $blue-lt
+			color: $white
+			font-size: 20px
 .discount
 	position: relative
 	background: $blue-d
@@ -111,6 +199,10 @@
 	+ld
 		width: 300px
 		padding: 12px 10px 25px 10px
+	+dm
+		margin-top: 20px
+		width: 230px
+		padding: 7px 10px 14px 10px
 	&:before
 		content: ''
 		position: absolute
@@ -127,6 +219,14 @@
 			border-bottom: 7px solid  $orange
 			bottom: -7px
 			right: -7px
+		+dm
+			width: 46px
+			height: 46px
+			border-right: 5px solid  $orange
+			border-bottom: 5px solid  $orange
+			bottom: -5px
+			right: -5px
+
 	&__sec-text, &__main-text
 		color: $white
 	&__main-text
@@ -134,12 +234,18 @@
 		font-size: 30px
 		+ld
 			font-size: 24px
+		+dm
+			font-size: 17px
 		span
 			font-size: 36px
 			+ld
 				font-size: 28px
+			+dm
+				font-size: 20px
 	&__sec-text
 		font-size: 24px
 		font-weight: 400
 		+ld
 			font-size: 18px
+		+dm
+			font-size: 14px

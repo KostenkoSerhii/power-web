@@ -216,11 +216,6 @@ a {
   background: #0c437b;
 }
 
-.nav__item:hover .nav__link {
-  color: #fff;
-  background: #0c437b;
-}
-
 .nav__link {
   display: block;
   padding: 5px 15px 15px 15px;
@@ -350,6 +345,45 @@ a {
   margin-right: 46px;
 }
 
+.header__nav-btn {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  padding-top: 6px;
+  transition: all 0.2s ease;
+  top: 8px;
+  right: 12px;
+  width: 40px;
+  height: 20px;
+  border-top: 3px solid #0c437b;
+  border-bottom: 3px solid #0c437b;
+}
+
+.header__nav-btn span {
+  display: block;
+  height: 3px;
+  background: #0c437b;
+  transition: all 0.2s ease;
+}
+
+.header__nav-btn.is-active {
+  border-top: 3px solid #fc6001;
+  border-bottom: 3px solid #fc6001;
+}
+
+.header__nav-btn.is-active span {
+  background: #fc6001;
+}
+
+.header__nav-btn:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+}
+
 .ndropdown {
   z-index: 2;
   position: absolute;
@@ -470,6 +504,13 @@ a {
   font-weight: 400;
 }
 
+@media only screen and (min-width: 992px){
+  .nav__item:hover .nav__link{
+    color: #fff;
+    background: #0c437b;
+  }
+}
+
 @media only screen and (max-width: 1649px){
   .logo img{
     width: 146px;
@@ -517,6 +558,9 @@ a {
     font-size: 16px;
     left: -42px;
     margin-top: -8px;
+  }
+  .ndropdown__btn{
+    bottom: 28px;
   }
   .dropitem__img{
     width: 144px;
@@ -566,6 +610,71 @@ a {
   }
   .header__nav{
     padding-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 1299px){
+  .btn{
+    min-width: 160px;
+    height: 28px;
+  }
+  .btn span{
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .ndropdown{
+    width: 830px;
+  }
+  .ndropdown__right{
+    height: 265px;
+  }
+  .ndropdown__right svg{
+    font-size: 13px;
+    left: 27px;
+  }
+  .ndropdown__btn{
+    bottom: 18px;
+  }
+  .dropitem{
+    margin-bottom: 15px;
+  }
+  .dropitem--last-row{
+    margin-bottom: 0;
+  }
+  .dropitem__img{
+    width: 100px;
+    height: 90px;
+  }
+  .dropitem__text{
+    font-size: 15px;
+  }
+  .discount{
+    margin-top: 20px;
+    width: 230px;
+    padding: 7px 10px 14px 10px;
+  }
+  .discount:before{
+    width: 46px;
+    height: 46px;
+    border-right: 5px solid #fc6001;
+    border-bottom: 5px solid #fc6001;
+    bottom: -5px;
+    right: -5px;
+  }
+  .discount__main-text{
+    font-size: 17px;
+  }
+  .discount__main-text span{
+    font-size: 20px;
+  }
+  .discount__sec-text{
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1250px){
+  .header__loc{
+    margin-right: 25px;
   }
 }
 
@@ -630,6 +739,95 @@ a {
   }
   .title-m{
     font-size: 22px;
+  }
+  .nav__item.active .nav__link{
+    background: #fc6001;
+  }
+  .nav__item.active .nav__link:after{
+    display: none;
+  }
+  .nav__item{
+    display: block;
+    text-align: left;
+    position: relative;
+  }
+  .nav__item:last-of-type .nav__link:after{
+    display: none;
+  }
+  .nav__link{
+    padding: 14px 13px;
+    position: relative;
+    font-size: 22px;
+    color: #fff;
+  }
+  .nav__link:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 90%;
+    height: 1px;
+    background: #1f71a8;
+  }
+  .phone{
+    font-size: 0;
+  }
+  .phone svg{
+    font-size: 30px;
+    top: 0;
+  }
+  .header__nav{
+    position: absolute;
+    width: 257px;
+    right: -12px;
+    background: #0c437b;
+    top: 55px;
+    padding-top: 0;
+    max-width: 100%;
+  }
+  .header__right{
+    position: relative;
+    top: 0;
+    float: right;
+    margin-right: 80px;
+    padding-top: 4px;
+  }
+  .header__loc{
+    display: none;
+  }
+  .header__nav-btn{
+    display: block;
+  }
+  .ndropdown{
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 0;
+  }
+  .ndropdown__left{
+    float: none;
+    width: 100%;
+  }
+  .ndropdown__right{
+    display: none;
+  }
+  .dropitem{
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .dropitem__img{
+    display: none;
+  }
+  .dropitem__text{
+    display: block;
+    text-align: left;
+    padding: 10px  10px 10px 30px;
+    background: #1f71a8;
+    color: #fff;
+    font-size: 20px;
   }
 }
 

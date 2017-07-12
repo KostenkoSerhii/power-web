@@ -24,6 +24,7 @@ $white: #fff
 $blue: #325578
 $blue-d: #0c437b
 $blue-bg: #001326
+$blue-lt: #1f71a8
 $blue-l: #f3f7fb
 $orange: #fc6001
 $red: #fc1f01
@@ -102,10 +103,23 @@ a
 			.nav__link
 				color: $white
 				background: $blue-d
+				+m
+					background: $orange
+					&:after
+						display: none
 		&:hover
-			.nav__link
-				color: $white
-				background: $blue-d
+			+rmin(992)
+				.nav__link
+					color: $white
+					background: $blue-d
+		+m
+			display: block
+			text-align: left
+			position: relative
+			&:last-of-type
+				.nav__link
+					&:after
+						display: none
 	&__link
 		display: block
 		padding: 5px 15px 15px 15px
@@ -120,6 +134,21 @@ a
 		+dt
 			font-size: 16px
 			padding: 5px 12px 11px 12px
+		+m
+			padding: 14px 13px
+			position: relative
+			font-size: 22px
+			color: $white
+			&:after
+				content: ''
+				position: absolute
+				bottom: 0
+				left: 50%
+				transform: translateX(-50%)
+				width: 90%
+				height: 1px
+				background: $blue-lt
+
 .loc
 	font-size: 0
 	display: inline-block
@@ -175,6 +204,11 @@ a
 			display: inline-block
 			position: relative
 			top: 5px
+	+m
+		font-size: 0
+		svg
+			font-size: 30px
+			top: 0
 .btn
 	min-width: 294px
 	height: 51px
@@ -186,6 +220,9 @@ a
 	+ld
 		min-width: 230px
 		height: 40px
+	+dm
+		min-width: 160px
+		height: 28px
 	&:after
 		content: ''
 		position: absolute
@@ -208,6 +245,9 @@ a
 		+ld
 			line-height: 40px
 			font-size: 18px
+		+dm
+			font-size: 16px
+			line-height: 28px
 	&:hover
 		&:after
 			opacity: 1
