@@ -11,7 +11,11 @@
 
 $icon-droparrow: "\EA01";
 $icon-facebook: "\EA02";
-$icon-phone: "\EA03";
+$icon-inst: "\EA03";
+$icon-phone: "\EA04";
+$icon-tw: "\EA05";
+$icon-vk: "\EA06";
+$icon-you: "\EA07";
 
 
 %icon {
@@ -32,4 +36,8 @@ $icon-phone: "\EA03";
 
 .icon-droparrow:before { content: $icon-droparrow; }
 .icon-facebook:before { content: $icon-facebook; }
+.icon-inst:before { content: $icon-inst; }
 .icon-phone:before { content: $icon-phone; }
+.icon-tw:before { content: $icon-tw; }
+.icon-vk:before { content: $icon-vk; }
+.icon-you:before { content: $icon-you; }

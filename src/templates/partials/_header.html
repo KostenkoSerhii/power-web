@@ -13,41 +13,8 @@
 			</div>
 			<ul class="header__nav nav ">
 				<li class="nav__item"><a class="nav__link" href="#"><span>Проекты</span></a></li>
-				<li class="nav__item active"><a class="nav__link" href="#"><span>Галлерея</span></a>
-					<!--begin nav dropdown-->
-					<div class="ndropdown">
-						<!--begin ndropdown__wrapper-->
-						<div class="ndropdown__wrapper">
-							<div class="ndropdown__left">
-								{% import "data/data.html" as tests %}
-								{% for test in tests.list %}
-								<div class="dropitem {% if test.lastRow %}dropitem--last-row{% endif %}">
-									<div class="dropitem__img">
-										<img src="img/{{test.img}}.jpg" alt="alt">
-									</div>
-									<a class="dropitem__text" href="#">{{test.title}}</a>
-								</div>
-								{% endfor %}
-							</div>
-							
-							<div class="ndropdown__right" style="background-image: url('img/drop-img.jpg');">
-								{{mixins.icon('droparrow')}}
-								<div class="discount">
-									<p class="discount__main-text">
-										Скидки на дома
-										по индивидуальному проекту 
-										до <span>15%</span>
-									</p>
-									<p class="discount__sec-text">
-										только в августе
-									</p>
-								</div>
-								<a class="btn ndropdown__btn" href="#"><span>Подробнее</span></a>
-							</div>
-						</div>
-						<!--end ndropdown__wrapper-->
-					</div>
-					<!--end nav dropdown-->
+				<li class="nav__item active nav__item--arrow"><a class="nav__link" href="#"><span>Галлерея</span></a>
+					{% include "partials/_header-drop-block.html" %}
 				</li>
 				<li class="nav__item"><a class="nav__link" href="#"><span>Строительство</span></a></li>
 				<li class="nav__item"><a class="nav__link" href="#"><span>Услуги</span></a></li>
@@ -58,7 +25,6 @@
 				<div class="loc header__loc">
 					<div class="loc__icon">M</div> <span>Киевская</span>
 				</div>
-
 				<a class="phone header__phone" href="tel:+380577511790" >
 					{{mixins.icon('phone')}}
 					+38 057 <span>751 17 90</span>
@@ -66,9 +32,6 @@
 			</div>
 		</div>
 		<!--end header__wrapper-->
-
-
 	</div>
 	<!--end container-->
-
 </header>

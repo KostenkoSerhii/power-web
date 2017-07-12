@@ -1,0 +1,192 @@
+.footer
+	background: $blue-bg
+	&__top-line
+		text-align: center
+		padding: 28px 0
+		font-size: 0
+		background: $red2-d
+		+ld
+			padding: 21px 0
+		span, a
+			color: $white
+			font-size: 48px
+			font-weight: 700
+			line-height: 1
+			display: inline-block
+			vertical-align: top
+			+ld
+				font-size: 36px
+			+dt
+				font-size: 30px
+			+m
+				display: block
+		span
+			margin-right: 105px
+			+ld
+				margin-right: 80px
+			+dt
+				margin-right: 70px
+			+m
+				margin-right: 0
+				margin-bottom: 13px
+		a
+			svg
+				fill: $white
+				display: inline-block
+				vertical-align: top
+				margin-right: 25px
+				+m
+					display: none
+	&__wrapper
+		font-size: 0
+		padding-top: 44px
+		padding-bottom: 50px
+		+ld
+			padding-top: 34px
+			padding-bottom: 40px
+		+dt
+			padding: 23px 0
+		+m
+			text-align: center
+			padding: 36px 0 35px
+.fmenu
+	display: inline-block
+	vertical-align: top
+	+m
+		width: 150px
+		text-align: left
+	&--nav, &--help
+		width: (305*100/1840) + %
+		+m
+			margin-bottom: 30px
+		+r(450)
+			width: 50%
+	&--nav
+		+dt
+			width: (150*100/960) + %
+	&--help
+		+dt
+			width: (255*100/960) + %
+			padding-left: 5%
+		+m
+			padding-left: 0
+	&--info
+		width: (420*100/1840) + %
+		+dt
+			width: (216*100/960) + %
+		+m
+			width: 250px
+		+r(450)
+			display: block
+	&--soc
+		width: 11%
+		+dt
+			display: block
+			width: 100%
+			margin-top: 25px
+			.fmenu__title, .fmenu__inner
+				display: inline-block
+				vertical-align: top
+				margin-right: 30px
+				margin-bottom: 0
+		+xs
+			.fmenu__title, .fmenu__inner
+				margin-right: 0
+		+m
+			display: block
+			width: 100%
+			text-align: center
+			.fmenu__title
+				display: block
+				margin-right: 0
+		svg
+			display: none
+			+xs
+				display: inline-block
+				font-size: 20px
+				fill: $white
+		.fmenu__link
+			+xs
+				font-size: 0
+				width: 50px
+				height: 50px
+				// background: $orange
+				text-align: center
+				padding-top: 15px
+				&:hover
+					background: $orange
+	&__title
+		margin-bottom: 28px
+		+ld
+			margin-bottom: 23px
+		+dt
+			margin-bottom: 18px
+	&__link, &__text
+		line-height: 1.7
+		color: $white
+		font-size: 24px
+		display: inline-block
+		+ld
+			font-size: 18px
+		+dt
+			font-size: 16px
+	&__link
+		&:hover
+			text-decoration: underline
+	&__quest-btn
+		display: inline-block
+		vertical-align: top
+		width: 225px
+		height: 49px
+		border: 2px solid $white
+		line-height: 49px
+		color: $white
+		font-size: 18px
+		text-transform: uppercase
+		padding-left: 28px
+		margin-top: 20px
+		+ld
+			padding-left: 20px
+			font-size: 18px
+			width: 172px
+			height: 37px
+			line-height: 37px
+			border: 2px solid $white
+		+dt
+			padding-left: 17px
+			width: 165px
+			font-size: 16px
+		+m
+			width: 144px
+			padding-left: 0
+			text-align: center
+			margin-top: 15px
+.widget
+	display: inline-block
+	vertical-align: top
+	width: (570*100/1840) + %
+	+dt
+		width: (320*100/960) + %
+	+m
+		display: block
+		width: 100%
+		margin-bottom: 30px
+	&__title
+		text-align: center
+		margin-bottom: 28px
+		+ld
+			margin-bottom: 23px
+		+dt
+			margin-bottom: 18px
+	&__content
+		width: 415px
+		height: 296px
+		margin: 0 auto
+		&--bg-color
+			background: #fff
+		+ld
+			width: 320px
+			height: 225px
+		+dt
+			width: 280px
+			height: 200px
