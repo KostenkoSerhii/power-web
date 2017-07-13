@@ -9,13 +9,17 @@
   font-style: normal;
 }
 
-$icon-droparrow: "\EA01";
-$icon-facebook: "\EA02";
-$icon-inst: "\EA03";
-$icon-phone: "\EA04";
-$icon-tw: "\EA05";
-$icon-vk: "\EA06";
-$icon-you: "\EA07";
+$icon-aks-arrow: "\EA01";
+$icon-droparrow: "\EA02";
+$icon-facebook: "\EA03";
+$icon-hnext: "\EA04";
+$icon-hprev: "\EA05";
+$icon-inst: "\EA06";
+$icon-mouse: "\EA07";
+$icon-phone: "\EA08";
+$icon-tw: "\EA09";
+$icon-vk: "\EA0A";
+$icon-you: "\EA0B";
 
 
 %icon {
@@ -34,9 +38,13 @@ $icon-you: "\EA07";
   display: inline-block;
 }
 
+.icon-aks-arrow:before { content: $icon-aks-arrow; }
 .icon-droparrow:before { content: $icon-droparrow; }
 .icon-facebook:before { content: $icon-facebook; }
+.icon-hnext:before { content: $icon-hnext; }
+.icon-hprev:before { content: $icon-hprev; }
 .icon-inst:before { content: $icon-inst; }
+.icon-mouse:before { content: $icon-mouse; }
 .icon-phone:before { content: $icon-phone; }
 .icon-tw:before { content: $icon-tw; }
 .icon-vk:before { content: $icon-vk; }

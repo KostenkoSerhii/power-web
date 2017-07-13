@@ -1,15 +1,70 @@
 <!-- begin slider-block -->
-<div class="slider-block">
+<div class="slider-block"  style="background-image: url('img/hslider-img.jpg');">
 	<!-- begin home slider -->
+	<!-- begin container -->
+	<div class="container">
+		<a class="callback  slider-block__callback" href="#">Заказать обратный звонок</a>
+	</div>
+	<!-- end container -->
 	<div class="hslider hslider--shadow">
-		<div class="hslider__slide" style="background-image: url('img/.jpg');">
+		<div class="hslider__slide">
 			<!-- begin container -->
 			<div class="container">
-				
+				<div class="hslider__content decor-quad decor-quad--l-t">
+					<div class="hslider__inner">
+						<h1 class="hslider__title title-m">Строительство sip панельных домов <br>
+							от 130 у.е. м<sub>2</sub>
+						</h1>
+						<p class="hslider__text">
+							Делаем квартирантов - домовладельцами;) <br>
+							<span>Построено более 210 домов в Харькове и области
+							</span>
+						</p>
+					</div>
+				</div>
 			</div>
 			<!-- end container -->
 		</div>
+		<div class="hslider__nav">
+			<div class="hslider__arrows-block">
+				<div class="hslider__prev">
+					{{mixins.icon('hprev')}}
+				</div>
+				<div class="hslider__next">
+					{{mixins.icon('hnext')}}
+				</div>
+
+			</div>
+			<div class="hslider__dots">
+				<span class="hslider__dot"></span>
+				<span class="hslider__dot is-active"></span>
+				<span class="hslider__dot"></span>
+				<span class="hslider__dot"></span>
+				<span class="hslider__dot"></span>
+			</div>
+		</div>
 	</div>
 	<!-- end home slider -->
+	<!-- begin container -->
+	<div class="container">
+		<div class="slider-block__ask-mob">
+			<div class="ask-block">
+				<p class="ask-block__title">Хотите построить дом?</p>
+				<p class="ask-block__sec">Всего 5 шагов!</p>
+				<p class="ask-block__top-text">Шаг № 1 <span>Выберите проект
+				</span>
+				<a class="ask-block__mob-link" href="#">Выбрать проект</a>
+			</p>
+			<p class="ask-block__b-text">Есть свой проект?</p>
+			<a class="ask-block__btn btn-red" href="#">
+				<span>Сделать рассчет стоимости</span>
+			</a>
+		</div>
+	</div>
+</div>
+<!-- end container -->
+<div class="slider-block__mouse">
+	{{mixins.icon('mouse')}}
+</div>
 </div>
 <!-- end slider-block -->

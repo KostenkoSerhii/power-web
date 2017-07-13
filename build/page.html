@@ -24,7 +24,15 @@
 				</a> </div>
             <div class="header__nav-btn is-active"> <span></span> </div>
             <ul class="header__nav nav ">
-              <li class="nav__item"><a class="nav__link" href="#"><span>Проекты</span></a></li>
+              <li class="nav__item"><a class="nav__link" href="#"><span>Проекты</span></a>
+                <div class="ask-block header__ask-block"> <svg class="icon icon-aks-arrow"><use xlink:href="img/sprite.svg#icon-aks-arrow"></use></svg>
+                  <p class="ask-block__title">Хотите построить дом?</p>
+                  <p class="ask-block__sec">Всего 5 шагов!</p>
+                  <p class="ask-block__top-text">Шаг № 1 Выберите проект <a class="ask-block__mob-link" href="#">Выбрать проект</a> </p>
+                  <p class="ask-block__b-text">Есть свой проект?</p> <a class="ask-block__btn btn-red" href="#">
+							<span>Сделать рассчет стоимости</span>
+						</a> </div>
+              </li>
               <li class="nav__item active nav__item--arrow"><a class="nav__link" href="#"><span>Галлерея</span></a>
                 <!--begin nav dropdown-->
                 <div class="ndropdown">
@@ -78,18 +86,54 @@
         <!--end container-->
       </header>
       <!-- begin slider-block -->
-      <div class="slider-block">
+      <div class="slider-block" style="background-image: url('img/hslider-img.jpg');">
         <!-- begin home slider -->
+        <!-- begin container -->
+        <div class="container"> <a class="callback  slider-block__callback" href="#">Заказать обратный звонок</a> </div>
+        <!-- end container -->
         <div class="hslider hslider--shadow">
-          <div class="hslider__slide" style="background-image: url('img/.jpg');">
+          <div class="hslider__slide">
             <!-- begin container -->
-            <div class="container"> </div>
+            <div class="container">
+              <div class="hslider__content decor-quad decor-quad--l-t">
+                <div class="hslider__inner">
+                  <h1 class="hslider__title title-m">Строительство sip панельных домов <br> от 130 у.е. м<sub>2</sub> </h1>
+                  <p class="hslider__text"> Делаем квартирантов - домовладельцами;) <br> <span>Построено более 210 домов в Харькове и области
+							</span> </p>
+                </div>
+              </div>
+            </div>
             <!-- end container -->
+          </div>
+          <div class="hslider__nav">
+            <div class="hslider__arrows-block">
+              <div class="hslider__prev"> <svg class="icon icon-hprev"><use xlink:href="img/sprite.svg#icon-hprev"></use></svg> </div>
+              <div class="hslider__next"> <svg class="icon icon-hnext"><use xlink:href="img/sprite.svg#icon-hnext"></use></svg> </div>
+            </div>
+            <div class="hslider__dots"> <span class="hslider__dot"></span> <span class="hslider__dot is-active"></span> <span class="hslider__dot"></span> <span class="hslider__dot"></span> <span class="hslider__dot"></span> </div>
           </div>
         </div>
         <!-- end home slider -->
+        <!-- begin container -->
+        <div class="container">
+          <div class="slider-block__ask-mob">
+            <div class="ask-block">
+              <p class="ask-block__title">Хотите построить дом?</p>
+              <p class="ask-block__sec">Всего 5 шагов!</p>
+              <p class="ask-block__top-text">Шаг № 1 <span>Выберите проект
+				</span> <a class="ask-block__mob-link" href="#">Выбрать проект</a> </p>
+              <p class="ask-block__b-text">Есть свой проект?</p> <a class="ask-block__btn btn-red" href="#">
+				<span>Сделать рассчет стоимости</span>
+			</a> </div>
+          </div>
+        </div>
+        <!-- end container -->
+        <div class="slider-block__mouse"> <svg class="icon icon-mouse"><use xlink:href="img/sprite.svg#icon-mouse"></use></svg> </div>
       </div>
       <!-- end slider-block -->
+      <!-- begin advs -->
+      <div class="advs"> </div>
+      <!-- end advs -->
       <footer class="footer">
         <div class="footer__top-line">
           <!-- begin container -->
@@ -121,7 +165,7 @@
               <h5 class="fmenu__title title-s">Помощь по сайту</h5>
               <div class="fmenu__inner"><a href="#" class="fmenu__link">Как заказать ?</a></div>
               <div class="fmenu__inner"><a href="#" class="fmenu__link">Где заказать?</a></div>
-              <div class="fmenu__inner"><a href="#" class="fmenu__link">Как посмотреть готовые дома?</a></div> <a class="btn-spec fmenu__quest-btn" href="#">Задать вопрос</a> </div>
+              <div class="fmenu__inner"><a href="#" class="fmenu__link">Посмотреть готовые дома?</a></div> <a class="btn-spec fmenu__quest-btn" href="#">Задать вопрос</a> </div>
             <!-- end fmenu -->
             <!-- begin widget -->
             <div class="widget">
