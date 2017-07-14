@@ -23,6 +23,7 @@
 			top: 55px
 			padding-top: 0
 			max-width: 100%
+
 	&__right
 		position: absolute
 		top: 20px
@@ -83,6 +84,12 @@
 			right: -5px
 			bottom: -5px
 			left: -5px
+	&__ask-block
+		position: absolute
+		top: calc(100% + 53px) 
+		right: 100px
+		display: none
+		
 .ndropdown
 	display: none
 	z-index: 2
@@ -93,11 +100,13 @@
 	width: 1530px
 	left: 0
 	font-size: 0
+	background: $white
 	+ld
 		width: 1200px
 	+dm
 		width: 830px
 	+m
+		display: block
 		position: relative
 		top: 0
 		width: 100%

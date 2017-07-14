@@ -9,13 +9,21 @@
   font-style: normal;
 }
 
-$icon-droparrow: "\EA01";
-$icon-facebook: "\EA02";
-$icon-inst: "\EA03";
-$icon-phone: "\EA04";
-$icon-tw: "\EA05";
-$icon-vk: "\EA06";
-$icon-you: "\EA07";
+$icon-adv1: "\EA01";
+$icon-adv2: "\EA02";
+$icon-adv3: "\EA03";
+$icon-adv4: "\EA04";
+$icon-aks-arrow: "\EA05";
+$icon-droparrow: "\EA06";
+$icon-facebook: "\EA07";
+$icon-hnext: "\EA08";
+$icon-hprev: "\EA09";
+$icon-inst: "\EA0A";
+$icon-mouse: "\EA0B";
+$icon-phone: "\EA0C";
+$icon-tw: "\EA0D";
+$icon-vk: "\EA0E";
+$icon-you: "\EA0F";
 
 
 %icon {
@@ -34,9 +42,17 @@ $icon-you: "\EA07";
   display: inline-block;
 }
 
+.icon-adv1:before { content: $icon-adv1; }
+.icon-adv2:before { content: $icon-adv2; }
+.icon-adv3:before { content: $icon-adv3; }
+.icon-adv4:before { content: $icon-adv4; }
+.icon-aks-arrow:before { content: $icon-aks-arrow; }
 .icon-droparrow:before { content: $icon-droparrow; }
 .icon-facebook:before { content: $icon-facebook; }
+.icon-hnext:before { content: $icon-hnext; }
+.icon-hprev:before { content: $icon-hprev; }
 .icon-inst:before { content: $icon-inst; }
+.icon-mouse:before { content: $icon-mouse; }
 .icon-phone:before { content: $icon-phone; }
 .icon-tw:before { content: $icon-tw; }
 .icon-vk:before { content: $icon-vk; }

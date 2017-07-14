@@ -6,7 +6,47 @@ title: Index page
 {% block content %}
 {% include "partials/_header.html" %}
 {% include "partials/_slider-block.html" %}
-
+<!-- begin advs -->
+<div class="advs">
+	<div class="advs__item">
+		<div class="advs__img">
+			{{mixins.icon(adv1)}}
+		</div>
+		<p class="advs__text">
+			15 лет успешной работы
+		</p>
+	</div>
+	<div class="advs__item">
+		<div class="advs__img">
+			{{mixins.icon(adv2)}}
+		</div>
+		<p class="advs__text">
+			Собственное производство
+		</p>
+	</div>
+	<div class="advs__item">
+		<div class="advs__img">
+			{{mixins.icon(adv3)}}
+		</div>
+		<p class="advs__text">
+			Гарантия на дом  10 лет!
+		</p>
+	</div>
+	<div class="advs__item">
+		<div class="advs__img">
+			{{mixins.icon(adv4)}}
+		</div>
+		<p class="advs__text">
+			Построено более 210 домов
+		</p>
+		<!-- {{mixins.icon(adv-arrow)}} -->
+		<div class="advs__spec-block">
+			Выделите на карте участок, 
+			на котором хотите построить Вы
+		</div>
+	</div>
+</div>
+<!-- end advs -->
 
 {% include "partials/_footer.html" %}
 <!-- 	{# variable example #}

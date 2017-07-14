@@ -1,6 +1,7 @@
 $icons: (0:0)
-$icons: map-merge($icons,('facebook': (X: -30px, Y:0px, W: 10px, H: 19px, TW: 40px, TH: 38px, IMG: '../img/sprite.png')))
-$icons: map-merge($icons,('facebook@2x': (X: 0px, Y:0px, W: 20px, H: 38px, TW: 40px, TH: 38px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('ask-mob-arrow': (X: -50px, Y:0px, W: 13px, H: 6px, TW: 63px, TH: 38px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('facebook': (X: -30px, Y:0px, W: 10px, H: 19px, TW: 63px, TH: 38px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('facebook@2x': (X: 0px, Y:0px, W: 20px, H: 38px, TW: 63px, TH: 38px, IMG: '../img/sprite.png')))
 
 
 // Gets an attribute from the sass map
@@ -36,6 +37,12 @@ $icons: map-merge($icons,('facebook@2x': (X: 0px, Y:0px, W: 20px, H: 38px, TW: 4
 @mixin sr($i)
   +sprite-retina($i)  
 
+//
+//.icon-ask-mob-arrow
+//  width: 13px
+//  height: 6px
+//  background-image: url('../img/sprite.png')
+//  background-position: -50px 0px
 //
 //.icon-facebook
 //  width: 10px
