@@ -16,14 +16,26 @@ $icon-adv4: "\EA04";
 $icon-aks-arrow: "\EA05";
 $icon-droparrow: "\EA06";
 $icon-facebook: "\EA07";
-$icon-hnext: "\EA08";
-$icon-hprev: "\EA09";
-$icon-inst: "\EA0A";
-$icon-mouse: "\EA0B";
-$icon-phone: "\EA0C";
-$icon-tw: "\EA0D";
-$icon-vk: "\EA0E";
-$icon-you: "\EA0F";
+$icon-hbuilding-1: "\EA08";
+$icon-hbuilding-2: "\EA09";
+$icon-hbuilding-3: "\EA0A";
+$icon-hbuilding-4: "\EA0B";
+$icon-hbuilding-5: "\EA0C";
+$icon-hbuilding-6: "\EA0D";
+$icon-hbuilding-7: "\EA0E";
+$icon-hbuilding-8: "\EA0F";
+$icon-hnext: "\EA10";
+$icon-hprev: "\EA11";
+$icon-inst: "\EA12";
+$icon-mouse: "\EA13";
+$icon-phone: "\EA14";
+$icon-tw: "\EA15";
+$icon-vk: "\EA16";
+$icon-why-we1: "\EA17";
+$icon-why-we2: "\EA18";
+$icon-why-we3: "\EA19";
+$icon-why-we4: "\EA1A";
+$icon-you: "\EA1B";
 
 
 %icon {
@@ -49,6 +61,14 @@ $icon-you: "\EA0F";
 .icon-aks-arrow:before { content: $icon-aks-arrow; }
 .icon-droparrow:before { content: $icon-droparrow; }
 .icon-facebook:before { content: $icon-facebook; }
+.icon-hbuilding-1:before { content: $icon-hbuilding-1; }
+.icon-hbuilding-2:before { content: $icon-hbuilding-2; }
+.icon-hbuilding-3:before { content: $icon-hbuilding-3; }
+.icon-hbuilding-4:before { content: $icon-hbuilding-4; }
+.icon-hbuilding-5:before { content: $icon-hbuilding-5; }
+.icon-hbuilding-6:before { content: $icon-hbuilding-6; }
+.icon-hbuilding-7:before { content: $icon-hbuilding-7; }
+.icon-hbuilding-8:before { content: $icon-hbuilding-8; }
 .icon-hnext:before { content: $icon-hnext; }
 .icon-hprev:before { content: $icon-hprev; }
 .icon-inst:before { content: $icon-inst; }
@@ -56,4 +76,8 @@ $icon-you: "\EA0F";
 .icon-phone:before { content: $icon-phone; }
 .icon-tw:before { content: $icon-tw; }
 .icon-vk:before { content: $icon-vk; }
+.icon-why-we1:before { content: $icon-why-we1; }
+.icon-why-we2:before { content: $icon-why-we2; }
+.icon-why-we3:before { content: $icon-why-we3; }
+.icon-why-we4:before { content: $icon-why-we4; }
 .icon-you:before { content: $icon-you; }
