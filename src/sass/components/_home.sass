@@ -1,2 +1,504 @@
 .advs
 	border-top: 5px solid $blue-d
+	padding-top: 52px
+	padding-bottom: 84px
+	font-size: 0
+	+ld
+		border-top: 3px solid $blue-d
+		padding-top: 38px
+		padding-bottom: 60px
+	&__item
+		display: inline-block
+		vertical-align: top
+		width: 25%
+		text-align: center
+		position: relative
+		+xs
+			width: 50%
+			margin-bottom: 24px
+	&__img
+		margin: 0 auto 10px
+
+		svg
+			font-size: 87px
+			fill: $orange
+			+ld
+				font-size: 69px
+			+dm
+				font-size: 63px
+	&__text
+		color: $blue-d
+		font-size: 30px
+		font-weight: 700
+		line-height: 1.4
+		text-align: center
+		+ld
+			font-size: 22px
+		+dm
+			font-size: 20px
+		+m
+			font-size: 18px
+	&__spec-block
+		padding: 20px 10px 20px 37px
+		color: $black
+		font-size: 24px
+		line-height: 1.4
+		position: absolute
+		left: 41%
+		transform: translateX(-50%)
+		min-width: 422px
+		top: calc(100% + 82px)
+		text-align: left
+		background: $white
+		z-index: 2
+		+ld
+			font-size: 18px
+			min-width: 322px
+			top: calc(100% + 58px)
+			left: 38%
+		+dm
+			left: 36%
+		+m
+			display: none
+		svg
+			fill: $blue-d
+			font-size: 103px
+			position: absolute
+			top: -77px
+			right: 35px
+			transform: rotate(40deg)
+			+ld
+				font-size: 85px
+				top: -58px
+				right: 23px
+.map-block
+	overflow: hidden
+	position: relative
+	&:before
+		width: 190px
+		height: 170px
+		content: ''
+		position: absolute
+		top: -135px
+		left: -40px
+		border: 15px solid  #074b90
+		z-index: 4
+		+m
+			z-index: 1
+			left: 50%
+			transform: translateX(-50%)
+	//&__container
+	&__left
+		padding-top: 40px
+		padding-right: 70px
+		position: relative
+		display: inline-block
+		vertical-align: top
+		text-align: center
+		z-index: 3
+		padding-bottom: 100px
+		+ld
+			padding-top: 35px
+			padding-right: 55px
+			padding-bottom: 75px
+		+lg
+			padding-top: 40px
+		+m
+			z-index: 0
+			display: block
+			padding-right: 0
+		&:before
+			content: ''
+			position: absolute
+			right: 0
+			top: 0
+			height: 100%
+			width: 3000px
+			background: $blue-d
+			z-index: -1
+	&__title
+		margin-bottom: 45px
+		position: relative
+		+ld
+			// font-size: 33px
+			margin-bottom: 37px
+		+dm
+			margin-bottom: 25px
+		+m
+			z-index: 1
+	&__video
+		height: 245px
+		border-top: 4px solid $white
+		border-bottom: 4px solid transparent
+		margin-bottom: 35px
+		width: 439px
+		position: relative
+		+ld
+			width: 335px
+			height: 188px
+			border-top: 3px solid $white
+			border-bottom: 3px solid transparent
+		+dm
+			width: 270px
+			height: 150px
+			margin-bottom: 20px
+		+m
+			margin-left: auto
+			margin-right: auto
+		&:last-of-type
+			margin-bottom: 0px
+
+
+		&:after
+			z-index: 0
+			content: ''
+			position: absolute
+			left: 0
+			width: 100%
+			bottom: 0
+			height: 4px
+			background: $white
+			+ld
+				height: 3px
+		//&--lc
+		//	margin-left: 10px
+		//&--rc
+		//	margin-right: 10px
+	.video
+		height: 100%
+		background-position: 50% 50%
+	&__right
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+		z-index: 1
+		width: 100%
+		+m
+			display: none
+	.map
+		height: 100%
+	&__btn
+		border: 15px solid  #074b90
+		text-align: center
+		width: 191px
+		height: 173px
+		color: $white
+		line-height: 1
+		font-size: 24px
+		font-weight: 700
+		display: block
+		padding-top: 24px
+		position: absolute
+		bottom: -90px
+		left: 44%
+		transform: translateX(-50%)
+		+ld
+			width: 147px
+			height: 133px
+			padding-top: 18px
+			font-size: 18px
+			bottom: -70px
+		+dm
+			width: 123px
+			height: 112px
+			padding-top: 13px
+			bottom: -55px
+		+m
+			left: 50%
+.why-we
+	padding-top: 74px
+	padding-bottom: 120px
+	+ld
+		padding-top: 55px
+		padding-bottom: 90px
+	+dm
+		padding-top: 40px
+		padding-bottom: 25px
+	+m
+		padding-top: 25px
+	&__title
+		text-align: center
+		margin-bottom: 55px
+		+ld
+			margin-bottom: 35px
+		+dm
+			margin-bottom: 25px
+	&__list
+		//display: flex
+		//flex-wrap: wrap
+		//justify-content: center
+		text-align: center
+		font-size: 0
+	&__item
+		//flex-basis: 26%
+		display: inline-block
+		vertical-align: top
+		width: 24%
+		position: relative
+		margin-right: 2%
+		text-align: left
+		//flex-grow: 0
+		padding-top: 90px
+		margin-bottom: 40px
+		+ld
+			padding-top: 70px
+			margin-bottom: 30px
+		+dm
+			width: 30%
+		+m
+			display: block
+			margin-bottom: 20px
+			width: 100%
+		&:nth-of-type(3n)
+			margin-right: 0
+
+		p
+			max-width: 301px
+			color: $black
+			font-size: 20px
+			line-height: 1.3
+			+ld
+				font-size: 16px
+				max-width: 250px
+			+m
+				max-width: 100%
+	&__quad
+		width: 112px
+		height: 112px
+		border: 8px solid $orange
+		text-align: center
+		padding-top: 18px
+		position: absolute
+		left: -20px
+		top: 0px
+		+ld
+			width: 86px
+			height: 86px
+			border: 6px solid $orange
+			padding-top: 13px
+			left: -12px
+		+m
+			left: 20px
+		svg
+			font-size: 58px
+			fill: $orange
+			+ld
+				font-size: 45px
+	&__item-title
+		color: $blue-d
+		font-size: 30px
+		font-weight: 700
+		line-height: 1
+		margin-bottom: 6px
+		display: inline-block
+		margin-left: 35px
+		padding-left: 5px
+		background: $white
+		position: relative
+		z-index: 1
+		+ld
+			font-size: 22px
+			margin-left: 25px
+		+m
+			margin-left: 65px
+.hbuilding
+	background: $blue-d
+
+	
+	font-size: 0
+	// z-index: 0
+	position: relative
+	overflow: hidden
+	&__inner
+		padding-top: 75px
+		padding-bottom: 70px
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: 100% 50%
+		+ld
+			padding-top: 55px
+			padding-bottom: 50px
+		+dm
+			padding-top: 25px
+			padding-bottom: 30px
+		+m
+			padding-top: 40px
+			padding-bottom: 20px
+			background: none!important
+	// .container
+	// 	z-index: 1
+
+	&__title
+		text-align: center
+		margin-bottom: 45px
+		+m
+			margin-bottom: 30px
+	&__left, &__right
+		display: inline-block
+		vertical-align: top
+		+m
+			display: block
+			width: 100%
+			padding: 0
+	&__left
+		width: 1355*100/1840 +%
+		+dm
+			width: 676*100/962 +%
+			
+	&__right
+		width: 485*100/1840 +%
+		position: relative
+
+		+dm
+			width: 286*100/962 +%
+			padding-left: 20px
+		&:before
+			content: ''
+			position: absolute
+			width: 427px
+			height: 389px
+			border: 42px solid #074b90
+			top: -213px
+			left: 170px
+			transform: translateX(-50%)
+			z-index: 0
+			+ld
+				width: 327px
+				height: 297px
+				border: 34px solid #074b90
+				top: -160px
+				left: 130px
+			+dm
+				width: 228px
+				height: 207px
+				border: 20px solid #074b90
+				top: -138px
+			+m
+				display: none
+		
+	&__video
+		width: 1235*100/1355 +%
+		margin-left: 40px
+		border-top: 5px solid transparent
+		border-bottom: 5px solid $white
+		position: relative
+		+dm
+			width: auto
+		&:after
+			content: ''
+			position: absolute
+			left: 0
+			top: 0
+			width: 100%
+			height: 5px
+			background: $white
+			z-index: 1
+		+ld
+			border-top: 3px solid transparent
+			border-bottom: 3px solid $white
+			&:after
+				height: 3px
+		.video
+			height: 673px
+			// height: 100%
+			position: relative
+			+cover
+			+ld
+				height: 490px
+			+dm
+				height: 378px
+				height: 0
+				padding-bottom: 56%
+	&__list
+		font-size: 0
+		margin-top: 80px
+		position: relative
+		z-index: 1
+		+ld
+			margin-top: 50px
+		+dm
+			margin-top: 0
+		+m
+			padding-left: 7%
+	&__item
+		margin-bottom: 33px
+		height: 56px
+		+vertical
+		text-align: left
+		+ld
+			margin-bottom: 17px
+		+dm
+			margin-bottom: 12px
+		&:last-of-type
+			margin-bottom: 0
+			a
+				&:after
+					display: none
+		a
+			margin-left: 60px
+			+trans
+			text-align: left
+			display: inline-block
+			vertical-align: middle
+			color: $white
+			line-height: 1
+			font-size: 24px
+			padding-bottom: 2px
+			border-bottom: 1px dashed $white
+			position: relative
+			+ld
+				font-size: 18px
+				margin-left: 45px
+			+dm
+				font-size: 16px
+			&:before, &:after
+				content: ''
+				position: absolute
+				left: -33px
+				+ld
+					left: -28px
+			&:before
+				width: 28px
+				height: 28px
+				background: $orange
+				transform: rotate(45deg)
+				top: 50%
+				margin-left: -14px
+				margin-top: -14px
+				+ld
+					width: 18px
+					height: 18px
+					margin-top: -9px
+					margin-left: -9px
+				+dm
+					width: 16px
+					height: 16px
+					margin-top: -8px
+					margin-left: -8px
+			&:after
+				width: 2px
+				height: 45px
+				background: $orange
+				bottom: -54px
+				+ld
+					height: 34px
+					bottom: -43px
+		&:hover
+			a
+				border-color: transparent
+	&__icon
+		display: inline-block
+		vertical-align: middle
+		width: 77px
+		text-align: center
+		+dm
+			width: 63px
+		svg
+			font-size: 56px
+			fill: $orange
+			max-width: 77px
+			+ld
+				font-size: 43px
+			+dm
+				font-size: 30px

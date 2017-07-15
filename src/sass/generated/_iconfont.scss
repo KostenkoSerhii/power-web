@@ -9,33 +9,34 @@
   font-style: normal;
 }
 
-$icon-adv1: "\EA01";
-$icon-adv2: "\EA02";
-$icon-adv3: "\EA03";
-$icon-adv4: "\EA04";
-$icon-aks-arrow: "\EA05";
-$icon-droparrow: "\EA06";
-$icon-facebook: "\EA07";
-$icon-hbuilding-1: "\EA08";
-$icon-hbuilding-2: "\EA09";
-$icon-hbuilding-3: "\EA0A";
-$icon-hbuilding-4: "\EA0B";
-$icon-hbuilding-5: "\EA0C";
-$icon-hbuilding-6: "\EA0D";
-$icon-hbuilding-7: "\EA0E";
-$icon-hbuilding-8: "\EA0F";
-$icon-hnext: "\EA10";
-$icon-hprev: "\EA11";
-$icon-inst: "\EA12";
-$icon-mouse: "\EA13";
-$icon-phone: "\EA14";
-$icon-tw: "\EA15";
-$icon-vk: "\EA16";
-$icon-why-we1: "\EA17";
-$icon-why-we2: "\EA18";
-$icon-why-we3: "\EA19";
-$icon-why-we4: "\EA1A";
-$icon-you: "\EA1B";
+$icon-adv-arrow: "\EA01";
+$icon-adv1: "\EA02";
+$icon-adv2: "\EA03";
+$icon-adv3: "\EA04";
+$icon-adv4: "\EA05";
+$icon-aks-arrow: "\EA06";
+$icon-droparrow: "\EA07";
+$icon-facebook: "\EA08";
+$icon-hbuilding-1: "\EA09";
+$icon-hbuilding-2: "\EA0A";
+$icon-hbuilding-3: "\EA0B";
+$icon-hbuilding-4: "\EA0C";
+$icon-hbuilding-5: "\EA0D";
+$icon-hbuilding-6: "\EA0E";
+$icon-hbuilding-7: "\EA0F";
+$icon-hbuilding-8: "\EA10";
+$icon-hnext: "\EA11";
+$icon-hprev: "\EA12";
+$icon-inst: "\EA13";
+$icon-mouse: "\EA14";
+$icon-phone: "\EA15";
+$icon-tw: "\EA16";
+$icon-vk: "\EA17";
+$icon-why-we1: "\EA18";
+$icon-why-we2: "\EA19";
+$icon-why-we3: "\EA1A";
+$icon-why-we4: "\EA1B";
+$icon-you: "\EA1C";
 
 
 %icon {
@@ -54,6 +55,7 @@ $icon-you: "\EA1B";
   display: inline-block;
 }
 
+.icon-adv-arrow:before { content: $icon-adv-arrow; }
 .icon-adv1:before { content: $icon-adv1; }
 .icon-adv2:before { content: $icon-adv2; }
 .icon-adv3:before { content: $icon-adv3; }

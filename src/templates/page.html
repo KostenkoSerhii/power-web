@@ -9,71 +9,80 @@ home: true
 {% include "partials/_slider-block.html" %}
 <!-- begin advs -->
 <div class="advs">
-	<div class="advs__item">
-		<div class="advs__img">
-			{{mixins.icon('adv1')}}
+	<!-- begin container -->
+	<div class="container">
+		<div class="advs__item">
+			<div class="advs__img">
+				{{mixins.icon('adv1')}}
+			</div>
+			<p class="advs__text">
+				15 лет <br> успешной работы
+			</p>
 		</div>
-		<p class="advs__text">
-			15 лет успешной работы
-		</p>
+		<div class="advs__item">
+			<div class="advs__img">
+				{{mixins.icon('adv2')}}
+			</div>
+			<p class="advs__text">
+				Собственное <br> производство
+			</p>
+		</div>
+		<div class="advs__item">
+			<div class="advs__img">
+				{{mixins.icon('adv3')}}
+			</div>
+			<p class="advs__text">
+				Гарантия на дом <br> 10 лет!
+			</p>
+		</div>
+		<div class="advs__item">
+			<div class="advs__img">
+				{{mixins.icon('adv4')}}
+			</div>
+			<p class="advs__text">
+				Построено более <br> 210 домов
+			</p>
+			<div class="advs__spec-block">
+				{{mixins.icon('adv-arrow')}}
+				Выделите на карте участок, <br>
+				на котором хотите построить Вы
+			</div>
+		</div>
 	</div>
-	<div class="advs__item">
-		<div class="advs__img">
-			{{mixins.icon('adv2')}}
-		</div>
-		<p class="advs__text">
-			Собственное производство
-		</p>
-	</div>
-	<div class="advs__item">
-		<div class="advs__img">
-			{{mixins.icon('adv3')}}
-		</div>
-		<p class="advs__text">
-			Гарантия на дом  10 лет!
-		</p>
-	</div>
-	<div class="advs__item">
-		<div class="advs__img">
-			{{mixins.icon('adv4')}}
-		</div>
-		<p class="advs__text">
-			Построено более 210 домов
-		</p>
-		<!-- {{mixins.icon(adv-arrow)}} -->
-		<div class="advs__spec-block">
-			Выделите на карте участок, 
-			на котором хотите построить Вы
-		</div>
-	</div>
+	<!-- end container -->
 </div>
 <!-- end advs -->
 <!-- begin map-block -->
 <div class="map-block">
-	<!-- begin map-block__left -->
-	<div class="map-block__left">
-		<h2 class="title-m map-block__title">
-			Озывы наших клиентов
-		</h2>
-		<div class="map-block__video map-block__video--lc">
-			
+	<div class="container map-block__container">
+		<!-- begin map-block__left -->
+		<div class="map-block__left">
+			<h2 class="title-m map-block__title">
+				Озывы наших клиентов
+			</h2>
+			<div class="map-block__video corner corner--lc" >
+				<div class="video" style="background-image: url('img/map-video1.jpg');"></div>
+			</div>
+			<div class="map-block__video corner corner--rc" >
+				<div class="video" style="background-image: url('img/map-video1.jpg');"></div>
+			</div>
+			<a class="map-block__btn" href="#">Ещё..</a>
 		</div>
-		<div class="map-block__video map-block__video--rc">
-			
-		</div>
-		<a class="map-block__btn" href="#">Ещё..</a>
+		<!-- end map-block__left -->
 	</div>
-	<!-- end map-block__left -->
 	<!-- begin map-block__right -->
 	<div class="map-block__right">
-		<div class="map-block__marker is-open">
+		<div class="map"  style="background-image: url('img/map.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+		</div>
+<!-- 		<div class="map-block__marker is-open">
 			<div class="map-block__info">
 				<div class="map-block__info-img"></div>
 				<a class="map-block__info-link" href="#">Подробнее
 					{{mixins.icon('hnext')}}
 				</a>
 			</div>
-		</div>
+		</div> -->
 
 	</div>
 	<!-- end map-block__right -->
@@ -83,7 +92,7 @@ home: true
 <div class="why-we">
 	<!-- begin container -->
 	<div class="container">
-		<h2 class="title-m why-we__title">Почему мы?</h2>
+		<h2 class="title-m title-m--blue why-we__title">Почему мы?</h2>
 		<!-- flex -->
 		<div class="why-we__list">
 			{% import "data/data.html" as tests %}
@@ -92,7 +101,7 @@ home: true
 				<div class="why-we__quad">
 					{{mixins.icon(test.img)}}
 				</div>
-				<strong class="why-we__title">
+				<strong class="why-we__item-title">
 					{{test.title}}
 				</strong>
 				<p >
@@ -108,27 +117,31 @@ home: true
 	<!-- end container -->
 </div>
 <!-- end why-we -->
-<div class="hbuilding">
-	<!-- begin container -->
-	<div class="container">
-		<h2 class="hbuilding__title title-m">Строительство - это просто
-		</h2>
-		<div class="hbuilding__video">
-
-		</div>
-		<div class="hbuilding__right">
-			<div class="hbuilding__list">
-				{% import "data/data.html" as tests %}
-				{% for test in tests.hbuilding %}
-				<a href="#" class="hbuilding__link">
-					{{mixins.icon(test.img)}}
-					<span>{{test.text}}</span>
-				</a>
-				{% endfor %}
+<div class="hbuilding" >
+	<div class="hbuilding__inner" style="background-image: url('img/hbuilding-bg.jpg');">
+		<!-- begin container -->
+		<div class="container">
+			<div class="hbuilding__left">
+				<h2 class="hbuilding__title title-m">Строительство - это просто
+				</h2>
+				<div class="hbuilding__video decor-quad decor-quad--l-t">
+					<div class="video" style="background-image: url('img/hbuilding-video.jpg');"></div>
+				</div>
+			</div>
+			<div class="hbuilding__right">
+				<div class="hbuilding__list">
+					{% import "data/data.html" as tests %}
+					{% for test in tests.hbuilding %}
+					<div class="hbuilding__item">
+						<div class="hbuilding__icon">{{mixins.icon(test.img)}}</div>
+						<a  href="#">{{test.text}}</a>
+					</div>
+					{% endfor %}
+				</div>
 			</div>
 		</div>
+		<!-- end container -->
 	</div>
-	<!-- end container -->
 </div>
 
 <!-- begin hdownload -->
