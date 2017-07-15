@@ -148,75 +148,55 @@ home: true
 <div class="hdownload">
 	<!-- begin container -->
 	<div class="container">
-		<div class="hdownload__first-block decor-quad decor-quad--r-t">
-			<h3 class="hdownload__title">
-				Путеводитель Вашего строительства
-			</h3>
-			<p>
-				Важные моменты стсроительства, распространенные ошибки при выборе строительной компании
-			</p>
-			<a class="btn-border hdownload__btn" href="#">Скачать</a>
+		<div class="hdownload__block decor-quad decor-quad--r-t">
+			<div class="hdownload__block-inner">
+				<img class="hdownload__img" src="img/hdownload-img.png" alt="alt">
+				<h3 class="title-lg title-lg--blue hdownload__title">
+					Путеводитель Вашего строительства
+				</h3>
+				<p>
+					Важные моменты стсроительства, распространенные ошибки при выборе строительной компании
+				</p>
+				<a class="btn-border hdownload__btn" href="#">Скачать</a>
+			</div>
 		</div>
 	</div>
 	<!-- end container -->
 </div>
 <!-- end hdownload -->
-<!-- begin form-block -->
-<div class="form-block">
+{% include "partials/_consult.html" %}
+<!-- begin hmore -->
+<div class="hmore">
 	<!-- begin container -->
 	<div class="container">
-		<div class="form-block__bg" style="background-image: url('img/form-block1-bg.jpg');"></div>
-
-		<div class="form-block__sec-block decor-quad decor-quad--l-t">
-			<h3 class="form-block__title">
-				Нужна консультация спецалиста?
-			</h3>
-			<p >
-				Заполните форму ниже и мы ответим на любые интересющие Вас вопросы
-			</p>
-			<div class="consult-form">
-				<form >	
-					<div class="consult-form__left">
-						<input class="input" type="text" placeholder="Ваше имя">
-						<input class="input" type="text" placeholder="Ваш телефон">
-					</div>
-					<textarea class="textarea" placeholder="Интересующий вопрос"></textarea>
-					<a class="btn-border form-block__btn" href="#">Скачать</a>
-				</form>
+		<h2 class="title-m hmore__title">
+			Узнайте больше о нашей компании
+		</h2>
+		<div class="hmore__list">
+			<div class="hm-block hmore__item">
+				<span class="hm-block__title">Менеджмент</span>
+				<div class="hm-block__img" >
+					<img src="img/hmore-1.jpg" alt="alt">
+				</div>
+				<a class="hm-block__link" href="#">Узнать больше {{mixins.icon('hnext')}}</a>
+			</div>
+			<div class="hm-block hmore__item">
+				<span class="hm-block__title">Строительство</span>
+				<div class="hm-block__img" >
+					<img src="img/hmore-2.jpg" alt="alt">
+				</div>
+				<a class="hm-block__link" href="#">Узнать больше {{mixins.icon('hnext')}}</a>
+			</div>
+			<div class="hm-block hmore__item">
+				<span class="hm-block__title">Обслуживание</span>
+				<div class="hm-block__img" >
+					<img src="img/hmore-3.jpg" alt="alt">
+				</div>
+				<a class="hm-block__link" href="#">Узнать больше {{mixins.icon('hnext')}}</a>
 			</div>
 		</div>
 	</div>
 	<!-- end container -->
-</div>
-<!-- end form-block -->
-<!-- begin hmore -->
-<div class="hmore">
-	<h2 class="title-m hmore__title">
-		Узнайте больше о нашей компании
-	</h2>
-	<div class="hmore__list">
-		<div class="hmore-block hmore__item">
-			<span class="hmore-block__title">Менеджмент</span>
-			<div class="hmore-block__img" >
-				<img src="img/hmore-1.jpg" alt="alt">
-			</div>
-			<a class="hmore-block__link" href="#">Узнать больше {{mixins.icon('hnext')}}</a>
-		</div>
-		<div class="hmore-block hmore__item">
-			<span class="hmore-block__title">Строительство</span>
-			<div class="hmore-block__img" >
-				<img src="img/hmore-2.jpg" alt="alt">
-			</div>
-			<a class="hmore-block__link" href="#">Узнать больше {{mixins.icon('hnext')}}</a>
-		</div>
-		<div class="hmore-block hmore__item">
-			<span class="hmore-block__title">Обслуживание</span>
-			<div class="hmore-block__img" >
-				<img src="img/hmore-3.jpg" alt="alt">
-			</div>
-			<a class="hmore-block__link" href="#">Узнать больше {{mixins.icon('hnext')}}</a>
-		</div>
-	</div>
 </div>
 <!-- end hmore -->
 

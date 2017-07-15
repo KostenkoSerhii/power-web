@@ -1,0 +1,274 @@
+---
+title: catalog
+breadcrumbs: ['Каталог', 'Дома и коттеджи']  
+breadBold: true
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+
+<!-- begin catalog page -->
+<div class="cpage">
+	{% include "partials/_header.html" %}
+	{% include "partials/_top-block.html" %}
+	<!-- begin catalog -->
+	<div class="catalog">
+		<!-- begin container -->
+		<div class="container">
+			<div class="catalog__topline">
+				<h1 class="title-lg title-lg--blue catalog__title">Проекты домов и коттеджей
+				</h1>
+				<div class="ctopline-filter">
+					<span>Сортировка:</span>
+					<a class="is-active" href="#">По цене </a>
+					<a href="#">По площади</a>
+					<a href="#">По популярности</a>
+				</div>
+
+			</div>
+			<div class="catalog__item catalog__item--spec-mob">
+				<a class="catalog__spec-link" href="#">Индивидуальное проектирование
+				</a>
+				<div class="ask-block catalog__ask-block">
+					{{mixins.icon('aks-arrow')}}
+					<p class="ask-block__sec">Хочу, чтобы все <br>
+						сделал архитектор!
+					</p>
+					<p class="ask-block__top-text">Шаг № 1 Выберите проект
+					</p>
+					<p class="catalog__spec-text" >Перейдите на понравившийся проект из каталога и выберите комплектацию
+					</p>
+					<p class="ask-block__b-text">Есть свой проект?</p>
+					<a class="ask-block__btn btn-red" href="#">
+						<span>Сделать рассчет стоимости</span>
+					</a>
+				</div>
+			</div>
+			<!-- begin catalog__wrapper -->
+			<div class="catalog__wrapper">
+				<!-- begin catalog__left -->
+				<div class="catalog__left">
+					<!-- begin filter -->
+					<div class="filter">
+						<a class="filter__mob-btn" href="#">Подбор дома</a>
+						<div class="filter__wrapper">
+							<!-- begin filter__block -->
+							<div class="filter__block">
+								<strong class="filter__title">Площадь</strong>
+								<!-- begin fslider -->
+								<div class="fslider">
+									<div class="fslider__path">
+										<div class="fslider__path-select"></div>
+										<div class="fslider__min"></div>
+										<div class="fslider__avr"></div>
+										<div class="fslider__max"></div>
+									</div>
+									<div class="fslider__text">
+										<span class="fslider__text-min">От 50 м<sub>2</sub></span>
+										<span class="fslider__text-max">До 240 м<sub>2</sub></span>
+									</div>
+									<div class="fslider__inputs">
+										<div class="fslider__left">
+											<span>От</span>
+											<input type="text" value="50">
+											<span>м<sub>2</sub></span>
+										</div>
+										<div class="fslider__right">
+											<span>До</span>
+											<input type="text" value="50">
+											<span>м<sub>2</sub></span>
+										</div>
+									</div>
+								</div>
+								<!-- end fslider -->
+							</div>
+							<!-- end filter__block -->
+							<!-- begin filter__block -->
+							<div class="filter__block">
+								<div class="fbuttons">
+									<strong class="fbuttons__title filter__title">
+										Количество комнат
+									</strong>
+									<div class="fbuttons__list">
+										<button class="fbuttons__btn" type="button">2</button>
+										<button class="fbuttons__btn is-active" type="button">3</button>
+										<button class="fbuttons__btn" type="button">4</button>
+										<button class="fbuttons__btn" type="button">5+</button>
+									</div>
+								</div>
+							</div>
+							<!-- end filter__block -->
+							<!-- begin filter__block -->
+							<div class="filter__block">
+								<div class="fbuttons">
+									<strong class="fbuttons__title filter__title">
+										Количество этажей
+									</strong>
+									<div class="fbuttons__list">
+										<button class="fbuttons__btn" type="button">1</button>
+										<button class="fbuttons__btn" type="button">2</button>
+										<button class="fbuttons__btn" type="button">3</button>
+									</div>
+								</div>
+							</div>
+							<!-- end filter__block -->
+							<!-- begin filter__block -->
+							<div class="filter__block">
+								<strong class="filter__title">Стоимость</strong>
+								<!-- begin fslider -->
+								<div class="fslider fslider--price">
+									<div class="fslider__path">
+										<div class="fslider__path-select"></div>
+										<div class="fslider__min"></div>
+										<div class="fslider__avr"></div>
+										<div class="fslider__max"></div>
+									</div>
+									<div class="fslider__text">
+										<span class="fslider__text-min">От 500 000 грн</span>
+										<span class="fslider__text-max">До 800 000 грн</span>
+									</div>
+									<div class="fslider__inputs">
+										<div class="fslider__left">
+											<span class="filter__spec-span">От</span>
+											<input type="text" value="500 000">
+											<span>грн</span>
+										</div>
+										<div class="fslider__right">
+											<span class="filter__spec-span">До</span>
+											<input type="text" value="800 000">
+											<span>грн</span>
+										</div>
+									</div>
+								</div>
+								<!-- end fslider -->
+							</div>
+							<!-- end filter__block -->
+							<!-- begin filter__block -->
+							<div class="filter__block">
+								<strong class="filter__title filter__title--spec">Дополнительно</strong>
+								<div class="fcheck">
+									<div class="fcheck__line">
+										<input type="checkbox" id="1">
+										<label for="1">
+											<span class="fcheck__icon">
+												<!-- 			{{mixins.icon('check')}} -->
+											</span>
+											<span>Терасса (2)</span>
+										</label>
+									</div>
+									<div class="fcheck__line">
+										<input type="checkbox" id="2">
+										<label for="2">
+											<span class="fcheck__icon">
+												<!-- {{mixins.icon('check')}} -->
+											</span>
+											<span>Второй свет 950</span>
+										</label>
+									</div>
+									<div class="fcheck__line">
+										<input type="checkbox" id="3">
+										<label for="3">
+											<span class="fcheck__icon">
+												<!-- 	{{mixins.icon('check')}} -->
+											</span>
+											<span>Балкон (3)</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<!-- end filter__block -->
+						</div>
+						<!-- begin filter sort -->
+						<div class="fsort">
+							<span>Сортировка: <span></span></span>
+							<div class="fsort__view">
+								<span>по</span> популярности
+							</div>
+							<div class="fsort__dropdown is-open">
+								<a href="#"><span>по</span> цене </a>
+								<a href="#"><span>по</span> площади</a>	
+							</div>
+						</div>
+						<!-- end filter sort -->
+					</div>
+					<!-- end filter -->
+					<div class="banner" style="background-image: url('img/banner.jpg');"></div>
+				</div>
+				<!-- end catalog__left -->
+				<!-- begin catalog__list -->
+				<div class="catalog__list">
+					{% import "data/data.html" as tests %}
+					{% for test in tests.cprod %}
+					{% if test.prod %}
+					<div class="catalog__item catalog__item--spec">
+						<a class="catalog__spec-link" href="#">Индивидуальное проектирование
+						</a>
+						<div class="ask-block catalog__ask-block">
+							{{mixins.icon('aks-arrow')}}
+							<p class="ask-block__sec">Хочу, чтобы все <br>
+								сделал архитектор!
+							</p>
+							<p class="ask-block__top-text">Шаг № 1 Выберите проект
+							</p>
+							<p class="catalog__spec-text" >Перейдите на понравившийся проект из каталога и выберите комплектацию
+							</p>
+							<p class="ask-block__b-text">Есть свой проект?</p>
+							<a class="ask-block__btn btn-red" href="#">
+								<span>Сделать рассчет стоимости</span>
+							</a>
+						</div>
+					</div>
+					{% else %}
+					<div class="prod-item	catalog__item">
+						<div class="prod-item__img">
+							<img src="img/{{test.img}}.jpg" alt="alt">
+						</div>
+						<strong class="prod-item__title">{{test.title |safe}}</strong>
+						<div class="prod-item__line">
+							<span class="prod-item__char-name">Производство</span>
+							<span class="prod-item__char-value">2 недели</span>
+						</div>
+						<div class="prod-item__line">
+							<span class="prod-item__char-name">Установка</span>
+							<span class="prod-item__char-value">1 месяц</span>
+						</div>
+						<strong class="prod-item__price">Цена от <span>783 567</span> грн</strong>
+						<a class="prod-item__btn " href="#">Подробнее</a>
+					</div>
+					{% endif %}
+
+					{% endfor %}
+				</div>
+				<!-- end catalog__list -->
+			</div>
+			<!-- end catalog__wrapper -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end catalog -->
+	<!-- begin catalog nav -->
+	<div class="cnav">
+		<div class="container">
+			<div class="cnav__inner">
+				<a class="cnav__link" href="#">{{mixins.icon('hprev')}}</a>
+				<a class="cnav__link is-active" href="#">1</a>
+				<a class="cnav__link" href="#">2</a>
+				<a class="cnav__link" href="#">3</a>
+				<a class="cnav__link" href="#">...</a>
+				<a class="cnav__link" href="#">8</a>
+				<a class="cnav__link" href="#">{{mixins.icon('hnext')}}</a>
+			</div>
+		</div>
+	</div>
+	<!-- end catalog nav -->
+
+	{% include "partials/_consult.html" %}
+	{% include "partials/_footer.html" %}
+</div>
+<!-- end catalog page -->
+
+
+
+
+{% endblock %}
