@@ -4,7 +4,7 @@
 	<div class="container">
 		<ul class="breadcrumbs {% if breadBold %}breadcrumbs--bold{% endif %}">
 			{% for link in breadcrumbs %}
-			<li><a href="#">{{link}}</a></li>
+			<li><a href="#">{{link |safe}}</a></li>
 			{% endfor %}
 		</ul>
 		<a class="callback  top-block__callback" href="#">Заказать обратный звонок</a>

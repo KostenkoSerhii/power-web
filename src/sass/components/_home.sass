@@ -90,6 +90,67 @@
 			left: 50%
 			transform: translateX(-50%)
 	//&__container
+	&__info
+		position: absolute
+
+		display: none
+		width: 238px
+		height: 238px
+		background-color: $blue-d
+		border: 10px solid $orange
+		cursor: default
+		&--position
+			left: 50%
+			bottom: 50%
+		+ld
+			width: 182px
+			height: 182px
+			border: 8px solid $orange
+	&__info-img
+		height: 174px
+		+ld
+			height: 133px 
+		img
+			height: 100%
+			width: 100%
+			object-fit:cover
+	&__info-link
+		height: 48px
+		line-height: 48px
+		color: $white
+		text-align: center
+		display: block
+		font-size: 24px
+		font-weight: 400
+		+ld
+			height: 35px
+			line-height: 35px
+			font-size: 18px
+		svg
+			fill: $white
+			font-size: 16px
+			+ld
+				font-size: 13px
+	&__marker
+		width: 39px
+		height: 39px
+		position: relative
+		cursor: pointer
+		&:before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			transform: rotate(45deg)
+			background: $orange
+		.marker-positon
+		position: absolute
+		top: 70%
+		left: 50% 
+		&.is-open
+			.map-block__info
+				display: block
+
 	&__left
 		padding-top: 40px
 		padding-right: 70px
