@@ -1,0 +1,782 @@
+.hpage
+	&__wrapper
+		+clr
+	&__container
+		+m
+			padding: 0
+	&__inner
+		+clr
+		&--first
+			margin-bottom: 40px
+			+ld
+				margin-bottom: 30px
+			+m
+				margin-bottom: 45px
+		&--sec
+			margin-bottom: 70px
+			+ld
+				margin-bottom: 50px
+			+dm
+				margin-bottom: 35px
+	&__desc-block, &__step, &__hchars, &__hpslider, &__imgs
+		// overflow: hidden
+	//	display: inline-block
+	//	vertical-align: top
+	&__desc-block, &__step, &__hchars
+		width: 935*100/1840 +%
+		float: left
+		+m
+			width: 100%
+			float: none
+	&__desc-block, &__step, &__hchars
+		padding-right: 75*100/1840 +%
+		+m
+			padding-right: 0
+	&__desc-block
+		+m
+			padding: 0 12px
+	&__hpslider, &__imgs
+		width: 905*100/1840 +%
+		float: right
+		+m
+			float: none
+			width: 100%
+	&__hpslider
+	&__inner
+	&__title-main
+		padding-bottom: 10px
+		// border-bottom: 4px solid $blue-d
+		margin-bottom: 63px
+		position: relative
+		+ld
+			margin-bottom: 45px
+		+dm
+			margin-bottom: 33px
+		&:after
+			content: ''
+			position: absolute
+			background: $blue-d
+			height: 4px
+			width: 140%
+			left: 0
+			bottom: 0
+			z-index: -1
+			+ld
+				height: 3px
+			+m
+				width: 100%
+	&__title-sec
+		margin-bottom: 30px
+		color: $blue-d
+		font-size: 36px
+		font-weight: 700
+		line-height: 1
+		+ld
+			margin-bottom: 15px
+			font-size: 24px
+		+dm
+			font-size: 22px
+			margin-bottom: 10px
+	&__equipment
+		margin-bottom: 100px
+		+ld
+			margin-bottom: 70px
+		+dm
+			margin-bottom: 50px
+		+m
+			padding: 0 12px
+			margin-bottom: 38px
+	&__btns
+		margin-bottom: 125px
+		font-size: 0
+		text-align: center
+		+ld
+			margin-bottom: 100px
+		+dm
+			margin-bottom: 75px
+		+m
+			margin-bottom: 40px
+	&__btn
+		display: inline-block
+		vertical-align: top
+		text-align: center
+		min-width: 411px
+		border-radius: 10px
+		height: 80px
+		color: $white
+		font-size: 28px
+		font-weight: 700
+		line-height: 1.1
+		padding: 7px 5px
+		background: $blue-d
+		border: 2px solid $blue-d
+		+trans
+		margin-right: 192*100/1840 +%
+		+ld
+			min-width: 292px
+			height: 57px
+			font-size: 20px
+			padding: 2px 5px
+		+dm
+			font-size: 16px
+			min-width: 240px
+			height: 46px
+			margin-right: 77px
+		+m
+			min-width: 240px
+		+xs
+			margin-right: 0
+			margin-bottom: 20px
+			display: block
+			width: 240px
+			min-width: auto
+			margin-left: auto
+			margin-right: auto
+		&:last-of-type
+			margin-right: 0
+			+xs
+				margin-bottom: 0
+				margin-right: auto
+		&:hover
+			color: $blue-d
+			background: $white
+
+.hdescr
+	padding: 23px 35px 44px 44px
+	box-shadow: $sd
+	position: relative
+	margin-bottom: 50px
+	+ld
+		padding: 20px 11px 25px 33px
+		margin-bottom: 37px
+	+dm
+		padding: 10px 22px 15px 26px
+		margin-bottom: 25px
+	+m
+		box-shadow: none
+		padding: 0
+		text-align: right
+	&:before
+		width: 156px
+		height: 142px
+		content: ''
+		position: absolute
+		border-right: 13px solid $orange
+		border-top: 13px solid $orange
+		z-index: 0
+		top: -13px
+		right: -13px
+		+ld
+			width: 112px
+			height: 101px
+			border-right: 10px solid $orange
+			border-top: 10px solid $orange
+			top: -10px
+			right: -10px
+		+dm
+			width: 82px
+			height: 72px
+			border-right: 6px solid $orange
+			border-top: 6px solid $orange
+			top: -6px
+			right: -6px
+		+m
+			display: none
+	&__more-content
+		display: none
+	&__article
+		+m
+			text-align: left
+		p
+			font-size: 20px
+			color: $black
+			line-height: 1.3
+			+ld
+				font-size: 16px
+				line-height: 1.4
+			+dm
+				font-size: 14px
+				line-height: 1.2
+	&__title
+		text-align: left
+	&__more
+		display: none
+		+m
+			display: block
+			margin-top: 10px
+			color: $blue-d
+			text-decoration: underline
+
+.hpslider
+	background: $white
+	position: relative
+	z-index: 1
+
+	&__wrapper
+		position: relative
+		padding: 4px 0
+		border-top: 5px solid $blue-d
+		border-bottom: 5px solid $blue-d
+		margin-bottom: 30px
+		+ld
+			border-top: 4px solid $blue-d
+			border-bottom: 4px solid $blue-d
+			padding: 3px 0
+			margin-bottom: 22px
+		+dm
+			border-top: 2px solid $blue-d
+			border-bottom: 2px solid $blue-d
+			padding: 2px 0
+			margin-bottom: 17px
+		+m
+			margin-bottom: 0
+	&__slide
+		height: 534px
+		+ld
+			height: 380px
+		+dm
+			height: 280px
+		img
+			object-fit: cover
+			height: 100%
+			width: 100%
+		+m
+			display: none
+		+xs
+			height: 190px
+		&.is-visible-mob
+			+m
+				display: block
+	&__tumb
+		+m
+			display: none
+	&__next, &__prev
+		position: absolute
+		bottom: -26px
+		width: 65px
+		height: 65px
+		text-align: center
+		padding-top: 18px
+		background: $orange
+		cursor: pointer
+		z-index: 1
+		+trans
+		// border: 2px solid $orange
+		+ld
+			width: 46px
+			height: 46px
+			padding-top: 13px
+			bottom: -20px
+		+dm
+			width: 34px
+			height: 34px
+			padding-top: 10px
+			bottom: -14px
+		svg
+			font-size: 25px
+			fill: $white
+			+ld
+				font-size: 18px
+			+dm
+				font-size: 14px
+		&:hover
+			background: $blue-d
+			svg
+				fill: $orange
+	&__prev
+		left: 55px
+		+ld
+			left: 40px
+		+dm
+			left: 27px
+	&__next
+		left: 125px
+		background: $blue-d
+		// border-color: $blue-d
+		+ld
+			left: 90px
+		+dm
+			left: 65px
+		&:hover
+			background: $orange
+			svg
+				fill: $blue-d
+	&__tumb
+		font-size: 0
+		text-align: right
+		cursor: pointer
+	&__tumb-item
+		display: inline-block
+		vertical-align: top
+		margin-left: 15px
+		img
+			max-height: 130px
+			width: auto
+			+ld
+				max-height: 90px
+			+dm
+				max-height: 70px
+.hstep
+	padding-left: 44px
+	+ld
+		padding-left: 36px
+	+dm
+			padding-right: 0
+			padding-left: 26px
+	+m
+		display: none
+	&--mob
+		+m
+			display: block
+			padding: 0 12px
+			margin-bottom: 38px
+	&__title
+		color: $blue-d
+		font-size: 28px
+		font-weight: 700
+		line-height: 1
+		margin-bottom: 40px
+		position: relative
+		display: inline-block
+		vertical-align: top
+		+ld
+			font-size: 22px
+			margin-bottom: 30px
+		+dm
+			font-size: 20px
+			margin-bottom: 20px
+		&:after
+			content: ''
+			position: absolute
+			width: 226px
+			height: 2px
+			background-color: $blue-d
+			left: 50%
+			transform: translateX(-50%)
+			bottom: -20px
+			+ld
+				width: 161px
+				bottom: -17px
+			+dm
+				width: 118px
+				bottom: -9px
+	&__list
+		li
+			margin-bottom: 40px
+			+ld
+				margin-bottom: 25px
+			+dm
+				margin-bottom: 15px
+				font-size: 15px
+			&:last-of-type
+				margin-bottom: 0
+
+.hstep li, .equipment li
+	font-size: 24px
+	line-height: 1.3
+	padding-left: 23px
+	position: relative
+	+ld
+		font-size: 18px
+		padding-left: 18px
+	+dm
+		font-size: 16px
+		padding-left: 13px
+		line-height: 1.1
+
+
+	&:before
+		content: ''
+		position: absolute
+		width: 13px
+		height: 13px
+		background: $orange
+		left: 0
+		top: 7px
+		+ld
+			width: 9px
+			height: 9px
+			top: 5px
+		+dm
+			width: 7px
+			height: 7px
+.hchars
+	+m
+		margin-bottom: 35px
+	&__title
+		+m
+			padding: 0 12px
+	&__table
+		position: relative
+		border-top: 3px solid $blue-d
+		border-bottom: 3px solid $blue-d
+	&__line
+		+clr
+		color: $blue-d
+		font-size: 24px
+		line-height: 1
+		padding: 22px 0
+		+ld
+			padding: 15px 0px 15px 22px
+			font-size: 18px
+		+dm
+			font-size: 16px
+			padding: 10px 0px 10px 18px
+		+m
+
+		&--blue
+			background: #f3f7fb
+			padding: 16px 0
+			+ld
+				padding: 9px 0px 9px 22px
+			+dm
+				padding: 8px 0px 8px 18px
+	&__left
+		float: left
+	&__right
+		float: right
+		width: 162px
+		+ld
+			width: 115px
+		+m
+			width: 70px
+	&__price
+		padding: 34px 34px 34px 0
+		text-align: right
+		color: $blue-d
+		font-size: 30px
+		font-weight: 700
+		line-height: 1
+		+ld
+			padding: 17px 18px 17px 0
+			font-size: 22px
+		+dm
+			font-size: 18px
+			padding: 12px 0px 12px 0
+		+m
+			padding: 12px 16px 12px 12px
+.h-imgs
+	&__wrapper
+		display: flex
+		justify-content: space-between
+		+m
+			padding: 0 12px
+		+xs
+			display: block
+	&__img
+		width: 292*100/905 +%
+		flex-shrink: 1
+		display: block
+		+xs
+			width: 100%
+			display: none
+		+r(499)
+		img
+			object-fit: cover
+			height: 100%
+			width: 100%
+			+r(499)
+				height: auto
+	&__title
+		padding: 0 12px
+		text-align: center
+	&__mob-slider
+		position: relative
+		+m
+			border-bottom: 2px solid $blue-d
+			padding-bottom: 2px
+	&__prev, &__next
+		display: none
+		+xs
+			display: block
+			position: absolute
+			width: 34px
+			height: 34px
+			text-align: center
+			background: $orange
+			bottom: -14px
+			cursor: pointer
+			padding-top: 8px
+			svg
+				fill: $white
+				font-size: 14px
+	&__prev
+		+xs
+			right: 63px	
+	&__next
+		+xs
+			right: 27px
+			background: $blue-d
+	&__visible-mob
+		+xs
+			display: block
+.equipment
+	&__title
+		margin-bottom: 57px
+		+ld
+			margin-bottom: 40px
+		+dm
+			margin-bottom: 30px
+		+m
+			margin-bottom: 15px
+	&__nav
+		display: none
+		+m
+			display: block
+			margin-bottom: 20px
+			+clr
+			a
+				font-size: 14p
+				color: $black
+				line-height: 1
+				text-decoration: underline
+				position: relative
+				&:before
+					content: ''
+					position: absolute
+					top: -5px
+					left: -5px
+					bottom: -5px
+					right: -5px
+	&__nav-left
+		+m
+			float: left
+	&__nav-right
+		+m
+			float: right
+	&__list
+		display: flex
+		flex-shrink: 1
+		justify-content: space-between
+		+m
+			display: block
+.hequipment
+	display: inline-block
+	vertical-align: top
+	width: 584*100/1840 +%
+	box-shadow: $sd
+	padding-bottom: 220px
+	background: $white
+	position: relative
+	+ld
+		padding-bottom: 165px
+	+m
+		width: 296px
+		margin-left: auto
+		margin-right: auto
+		display: none
+		padding-bottom: 22px
+	&.is-visible-mob
+		+m
+			display: block
+	&--corner-lt, &--corner-lb
+		&:before
+			content: ''
+			position: absolute
+			width: 156px
+			height: 142px
+			border: 12px solid $orange
+			z-index: -1
+			left: -12px
+			+ld
+				width: 110px
+				height: 101px
+				border: 9px solid $orange
+				left: -9px
+			+dm
+				width: 85px
+				height: 75px
+				border: 6px solid $orange
+				left: -6px
+	&--corner-lt
+		&:before
+			top: -12px
+			+ld
+				top: -9px
+			+dm
+				top: -6px
+	&--corner-lb
+		&:before
+			bottom: -12px
+			+ld
+				bottom: -9px
+			+dm
+				bottom: -6px
+	&__inner
+		position: relative
+		z-index: 1
+	&__title
+		padding: 22px 0 26px
+		background: $blue-d
+		color: $white
+		font-size: 36px
+		font-weight: 700
+		line-height: 1
+		text-align: center
+		margin-bottom: 40px
+		+ld
+			font-size: 24px
+			padding: 16px 0 20px
+			margin-bottom: 27px
+		+dm
+			font-size: 20px
+			padding: 10px 0 14px
+			margin-bottom: 18px
+	&__list
+		padding-left: 40px
+		padding-right: 50px
+		+ld
+			padding-right: 30px
+			padding-left: 28px
+		+dm
+			padding-left: 20px
+		li
+			margin-bottom: 15px
+			+ld
+				margin-bottom: 10px
+			&:last-of-type
+				margin-bottom: 0
+	&__bottom
+		position: absolute
+		z-index: 1
+		bottom: 0
+		left: 0
+		width: 100%
+		+m
+			position: relative
+			margin-top: 15px
+	&__price
+		color: $blue-d
+		font-size: 30px
+		line-height: 1
+		font-weight: 700
+		text-align: center
+		margin-bottom: 30px
+		+ld
+			font-size: 22px
+			margin-bottom: 25px
+		+dm
+			font-size: 18px
+			margin-bottom: 18px
+	&__quest
+		display: inline-block
+		vertical-align: top
+		width: 27px
+		height: 27px
+		background-color: $white
+		border: 2px solid $orange
+		position: relative
+		border-radius: 50%
+		font-size: 24px
+		font-weight: 700
+		text-align: center
+		color: $orange
+		cursor: pointer
+		+ld
+			width: 20px
+			height: 20px
+			font-size: 17px
+			top: 1px
+		+dm
+			width: 16px
+			height: 16px
+			font-size: 12px
+		&:before
+			content: ''
+			position: absolute
+			top: -5px
+			left: -5px
+			bottom: -5px
+			right: -5px
+	&__btn
+		// width: 411px
+		width: 410*100/580 +%
+		height: 80px
+		background-color: $white
+		border: 3px solid red
+		border-radius: 10px
+		display: block
+		font-size: 28px
+		font-weight: 700
+		color: $orange
+		text-align: center
+		margin: 0 auto 45px
+		line-height: 1.2
+		+trans
+		+ld
+			font-size: 20px
+			height: 57px
+			margin: 0 auto 35px
+			min-width: 292px
+		+dm
+			height: 50px
+			font-size: 16px
+			margin: 0 auto 20px
+			line-height: 1.3
+			padding-top: 2px
+			min-width: 258px
+		+m
+			margin-bottom: 0
+			width: 258px
+			min-width: auto
+		&:hover
+			background: $red
+			color: $white
+	&__hint
+		left: 50%
+		bottom: calc(50% + 45px)
+		+m
+			left: auto
+			right: 50%
+.hint
+	position: absolute
+	z-index: 3
+	box-shadow: $sd
+	padding: 15px 26px
+	background: $white
+	min-width: 400px
+	text-align: left
+	font-size: 20px
+	line-height: 1.2
+	color: $black
+	font-weight: 400
+	display: none
+	cursor: default
+	+ld
+		font-size: 16px
+		min-width: 283px
+		padding: 10px 15px 13px
+	+dm
+		min-width: 208px
+		padding: 10px 11px 10px 14px
+		font-size: 12px
+
+	&.is-open
+		display: block
+	&__b-line
+		margin-top: 20px
+		+dm
+			margin-top: 10px
+	a
+		text-decoration: underline
+		color: $blue-d
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: -5px
+			left: -5px
+			right: -5px
+			bottom: -5px
+		&:hover
+			text-decoration: none
+	&:after
+		content: ''
+		position: absolute
+		bottom: -25px
+		left: 0
+		+arr(35, 25, $white, tl)
+		+m
+			+arr(35, 25, $white, tr)
+			right: 0
+			left: auto

@@ -1,0 +1,190 @@
+---
+title: house page
+breadcrumbs: ['Каталог', 'Дома и коттеджи', 'Дом попроекту “Север”139м2']  
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+
+<!-- begin home page -->
+<div class="hpage">
+	{% include "partials/_header.html" %}
+	{% include "partials/_top-block.html" %}
+	<!-- begin container -->
+	<div class="container hpage__container">
+		<div class="hpage__wrapper">
+			<!-- begin hpage__inner -->
+			<div class="hpage__inner hpage__inner--first">
+				<!-- begin hpage__desc-block -->
+				<div class="hpage__desc-block">
+					<h1 class="title-lg title-lg--blue hpage__title-main">Дом по проекту “Север”</h1>
+					<div class="hdescr">
+						<h2 class="hdescr__title hpage__title-sec">Описание</h2>
+						<div class="hdescr__article">
+							<p>	В домах этой серии устанавливаются ростовые окна которые обеспечивают отличное естественное освещение и открывают отдыхающим велмколепный обзор окружающей природы.</p>
+							<div class="hdescr__more-content">
+								<p>Дом можно построить в зеркальном варианте, выделить на первом этаже дополнительную комнату или помещение для санузла.  В базовой комплектации предусмотрен ленточный монолитный фундамент. Заказав проект с пакетом Зимний или Северный можно жить и отдыхать в доме круглогодично.
+								</p>
+							</div>
+						</div>
+						<a class="hdescr__more" href="#">Больше</a>
+					</div>
+				</div>
+				<!-- end hpage__desc-block -->
+				<!-- begin home page__slider -->
+				<div class="hpslider hpage__hpslider">
+					<div class="hpslider__wrapper">
+						<div class="hpslider__slide is-visible-mob">
+							<img src="img/hp-slider.jpg" alt="alt">
+						</div>
+						<div class="hpslider__prev">{{mixins.icon('hprev')}}</div>
+						<div class="hpslider__next">{{mixins.icon('hnext')}}</div>
+					</div>
+					<div class="hpslider__tumb">
+						<div class="hpslider__tumb-item">
+							<img src="img/hp-tumb-1.jpg" alt="alt">
+						</div>
+						<div class="hpslider__tumb-item">
+							<img src="img/hp-tumb-1.jpg" alt="alt">
+						</div>
+						<div class="hpslider__tumb-item">
+							<img src="img/hp-tumb-2.jpg" alt="alt">
+						</div>
+						<div class="hpslider__tumb-item">
+							<img src="img/hp-tumb-2.jpg" alt="alt">
+						</div>
+					</div>
+				</div>
+				<!-- end home page__slider -->
+				<!-- begin hpage__step -->
+				<div class="hstep hpage__step">
+					<h3 class="hstep__title">Шаг № 2 Выберите комплектацию</h3>
+					<ul class="hstep__list">
+						<li class="hstep__item">Нажмите ”Подготовить строительство по проекту”
+						</li>
+						<li class="hstep__item">Во сплывающей форме укажите максимальную информацию  <br> 
+							по расположению участка пожелания к проекту и строительству.
+						</li>
+					</ul>
+				</div>
+				<!-- end hpage__step -->
+			</div>
+			<!-- end hpage__inner -->
+			<!-- begin hpage__inner -->
+			<div class="hpage__inner hpage__inner--sec">
+				<div class="hchars hpage__hchars">
+					<h2 class="hchars__title hpage__title-sec">Характеристики</h2>
+					<div class="hchars__table">
+						{% import "data/data.html" as tests %}
+						{% for test in tests.hchars %}
+						<div class="hchars__line {% if test.blueLine %}hchars__line--blue{% endif %}">
+							<div class="hchars__left">{{test.left}}</div>
+							<div class="hchars__right">{{test.right |safe}}</div>
+						</div>
+						{% endfor %}
+						<div class="hchars__price">Цена от <span>783 567</span> грн</div>
+					</div>
+
+				</div>
+				<!-- begin hpage__imgs -->
+				<div class="hpage__imgs h-imgs">	
+					<h2 class="h-imgs__title hpage__title-sec">Дома, построенные по проекту</h2>
+					<div class="h-imgs__mob-slider">
+						<div class="h-imgs__wrapper">
+							<a class="h-imgs__img h-imgs__visible-mob" href="#">
+								<img src="img/h-img-1.jpg" alt="alt">
+							</a>
+							<a class="h-imgs__img" href="#">
+								<img src="img/h-img-1.jpg" alt="alt">
+							</a>
+							<a class="h-imgs__img" href="#">
+								<img src="img/h-img-1.jpg" alt="alt">
+							</a>
+						</div>
+						<div class="h-imgs__prev">{{mixins.icon('hprev')}}</div>
+						<div class="h-imgs__next">{{mixins.icon('hnext')}}</div>
+					</div>
+
+				</div>
+				<!-- end hpage__imgs -->
+			</div>
+			<!-- end hpage__inner -->
+			<!-- begin hpage__step -->
+			<div class="hstep hstep--mob">
+				<h3 class="hstep__title">Шаг № 2 Выберите комплектацию</h3>
+				<ul class="hstep__list">
+					<li class="hstep__item">Нажмите ”Подготовить строительство по проекту”
+					</li>
+					<li class="hstep__item">Во сплывающей форме укажите максимальную информацию по расположению участка пожелания к проекту и строительству.
+					</li>
+				</ul>
+			</div>
+			<!-- end hpage__step -->
+		</div>
+		<!-- begin hpage__equipment -->
+		<div class="hpage__equipment equipment">
+			<h2 class="equipment__title hpage__title-sec">Комплектации</h2>
+			<div class="equipment__nav">
+				<a class="equipment__nav-left" href="#">Практичное строительство</a>
+				<a class="equipment__nav-right" href="#">Под отделку</a>
+			</div>
+			<div class="equipment__list">
+				{% import "data/data.html" as tests %}
+				{% for test in tests.hequipment %}
+				<!-- begin  hequipment-->
+				<div class="hequipment {% if test.leftCorner %}hequipment--corner-lt {% else %} hequipment--corner-lb{% endif %}
+				{% if test.isMob %}is-visible-mob{% endif %}">
+				<!-- begin hquipment__inner -->
+				<div class="hquipment__inner">
+					<div class="hequipment__title">{{test.title}}</div>
+					<ul class="hequipment__list">
+						{{test.list |safe}}
+					</ul>
+					<div class="hequipment__bottom">
+						<div class="hequipment__price">Цена от 783 567 грн
+							<div class="hequipment__quest">?
+								<div class="hequipment__hint hint {% if test.hintOpen %}is-open{% endif %}">
+									<p>Точная стоимость проекта рассчитывается на этапе... Учитывается расположение учестка, условия размещения и работы строительной бригады.
+									</p>
+									<div class="hint__b-line">Более подробно на <a href="#">странице</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a class="hequipment__btn" href="#">Подготовить строительство<br>
+							по проекту
+						</a>
+					</div>
+				</div>
+				<!-- end hquipment__inner -->
+			</div>
+			<!-- end hequipment -->
+
+			{% endfor %}
+		</div>
+	</div>
+	<!-- end hpage__equipment -->
+</div>
+<!-- end container -->
+<!-- begin container -->
+<div class="container hpage__btns">
+	<a class="hpage__btn" href="#" >Хочу этот проект<br>
+		с небольшими доработками
+	</a>
+	<a class="hpage__btn" href="#">Заказать<br>
+		индивидуальный проект
+	</a>
+</div>
+<!-- end container -->
+
+
+{% include "partials/_consult.html" %}
+{% include "partials/_footer.html" %}
+</div>
+<!-- end home page -->
+
+
+
+
+{% endblock %}

@@ -104,7 +104,8 @@ a
 .nav
 	font-size: 0
 	text-align: center
-	z-index: 1
+	z-index: 5
+
 	&__item
 		display: inline-block
 		vertical-align: top
@@ -624,6 +625,9 @@ a
 		margin-right: 28px
 		+ld
 			font-size: 14px
+		+m
+			font-size: 11px
+			margin-right: 15px
 		&:after
 			content: '/'
 			position: absolute
@@ -631,3 +635,5 @@ a
 			transform: translateY(-50%)
 			right: -17px
 			color: #7d7c7c
+			+m
+				right: -10px
