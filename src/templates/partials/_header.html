@@ -13,20 +13,6 @@
 			</div>
 			<ul class="header__nav nav ">
 				<li class="nav__item"><a class="nav__link" href="#"><span>Проекты</span></a>
-					{% if home %} 
-					<div class="ask-block header__ask-block">
-						{{mixins.icon('aks-arrow')}}
-						<p class="ask-block__title">Хотите построить дом?</p>
-						<p class="ask-block__sec">Всего 5 шагов!</p>
-						<p class="ask-block__top-text">Шаг № 1 Выберите проект
-							<a class="ask-block__mob-link" href="#">Выбрать проект</a>
-						</p>
-						<p class="ask-block__b-text">Есть свой проект?</p>
-						<a class="ask-block__btn btn-red" href="#">
-							<span>Сделать рассчет стоимости</span>
-						</a>
-					</div>
-					{% endif %}
 				</li>
 				<li class="nav__item active nav__item--arrow"><a class="nav__link" href="#"><span>Галлерея</span></a>
 					{% include "partials/_header-drop-block.html" %}
@@ -47,6 +33,20 @@
 			</div>
 		</div>
 		<!--end header__wrapper-->
+		{% if home %} 
+		<div class="ask-block header__ask-block">
+			{{mixins.icon('aks-arrow')}}
+			<p class="ask-block__title">Хотите построить дом?</p>
+			<p class="ask-block__sec">Всего 5 шагов!</p>
+			<p class="ask-block__top-text">Шаг № 1 Выберите проект
+				<a class="ask-block__mob-link" href="#">Выбрать проект</a>
+			</p>
+			<p class="ask-block__b-text">Есть свой проект?</p>
+			<a class="ask-block__btn btn-red" href="#">
+				<span>Сделать рассчет стоимости</span>
+			</a>
+		</div>
+		{% endif %}
 	</div>
 	<!--end container-->
 </header>

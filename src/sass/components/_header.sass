@@ -6,16 +6,26 @@
 	&__left
 		float: left
 	&__nav
-		max-width: 1270/1840*100 + %
+		//max-width: 1270/1840*100 + %
+		// max-width: 944/1840*100 + %
 		padding-top: 20px
+		padding-left: 320px
+		+lp
+			padding-left: 230px
 		+ld
-			padding-top: 8px
+			padding-top: 9px
+		
 		+lg
 			padding-top: 15px
+		+dm
+			padding-left: 160px
 		+dt
 			padding-top: 9px
+			padding-left: 130px
+		+ds
+			padding-left: 107px
 		+m
-			// display: none
+
 			position: absolute
 			width: 257px
 			right: -12px
@@ -23,6 +33,7 @@
 			top: 55px
 			padding-top: 0
 			max-width: 100%
+			padding-left: 0
 
 	&__right
 		position: absolute
@@ -34,7 +45,7 @@
 			top: 9px
 		+m
 			position: relative
-			top: 0
+			top: -2px
 			float: right
 			margin-right: 80px
 			padding-top: 4px
@@ -87,38 +98,127 @@
 	&__ask-block
 		position: absolute
 		top: calc(100% + 53px) 
-		right: -220px
-		display: none
+		left: 48px
+		+lp
+
+			width: 274px
+			padding: 15px 15px 25px
+			top: calc(100% + 48px)
+		+dm
+			width: 231px 
+			padding: 12px 15px 20px
+			top: calc(100% + 45px)
+			left: 70px
+		+dt
+			left: 38px
+		+m
+			display: none
+		.ask-block__title
+			+lp
+				font-size: 20px
+			+dm
+				font-size: 16px
+
+		.ask-block__sec
+			+lp
+				font-size: 25px
+				margin-bottom: 45px
+			+dm
+				font-size: 20px
+				margin-bottom: 40px
+		.ask-block__top-text
+			+lp
+				font-size: 20px
+				margin-bottom: 35px
+				&:after
+					width: 172px
+			+dm
+				font-size: 18px
+				margin-bottom: 30px
+				&:after
+					width: 145px
+		.ask-block__b-text
+			+lp
+				font-size: 22px
+				margin-bottom: 20px
+			+dm
+				font-size: 20px
+		.ask-block__btn
+			+lp
+				min-width: 206px
+				height: 43px
+				span
+					font-size: 16px
+					line-height: 43px
+			+dm
+				min-width: 174px
+				height: 36px
+				span
+					line-height: 36px
+					font-size: 13px
+		svg
+			transform: rotate(-10deg)
+			right: -47px
+			top: -40px
+			+lp
+				font-size: 82px
+			+ld
+				right: -40px
+			+dm
+				right: 41px
+				z-index: -1
+			+ds
+				right: 60px
+		
 		
 .ndropdown
-	display: none
-	z-index: 2
+
+	z-index: 4
 	position: absolute
-	padding: 18px 30px
-	top: 105%
+	display: none
+	//top: 76px
+	top: 67px
 	box-shadow: $sdb
 	width: 1530px
-	left: 0
+	left: 0px
 	font-size: 0
-	background: $white
 	+ld
 		width: 1200px
+		top: 53px
+	+lg
+		top: 52px
 	+dm
 		width: 830px
+	+dt
+		top: 39px
 	+m
 		display: block
 		position: relative
 		top: 0
 		width: 100%
 		padding: 0
+		left: 0
 	&__wrapper
+		margin-top: 5px
+		background: $white
 		+clr
+		padding: 18px 15px 18px 30px
+		+ld
+			padding: 15px 15px 15px 24px
+			margin-top: 3px
+		+dm
+			padding: 8px 8px 8px 15px
+			margin-top: 2px
+		+m
+			margin-top: 0
+			padding: 0
 	&__left
 		width: 875/1470*100 + %
 		float: left
 		+m
 			float: none
 			width: 100%
+
 	&__right
 		width: 545/1470*100 + %
 		float: right
@@ -144,7 +244,7 @@
 				margin-top: -8px
 			+dm
 				font-size: 13px
-				left: 27px
+				left: -29px
 	&__btn
 		position: absolute
 		bottom: 35px
@@ -161,7 +261,7 @@
 	vertical-align: top
 	margin-bottom: 25px
 	+dm
-		margin-bottom: 15px
+		margin-bottom: 12px
 	+m
 		display: block
 		width: 100%
@@ -207,6 +307,7 @@
 	width: 425px
 	margin-top: 38px
 	padding: 18px 18px 29px 18px
+	text-align: center
 	+ld
 		width: 300px
 		padding: 12px 10px 25px 10px
@@ -214,6 +315,7 @@
 		margin-top: 20px
 		width: 230px
 		padding: 7px 10px 14px 10px
+
 	&:before
 		content: ''
 		position: absolute
