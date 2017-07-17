@@ -896,6 +896,7 @@ a {
 
 .popup__overlay {
   height: 100%;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .popup__content {
@@ -921,6 +922,10 @@ a {
   border: 1px solid #0c437b;
   cursor: pointer;
   transition: all 0.2s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .popup__close span {
@@ -1009,6 +1014,10 @@ a {
 .popup__btn:hover {
   background: #fff;
   color: #fc1f01;
+}
+
+.body-is-hidden {
+  overflow: hidden;
 }
 
 .header {

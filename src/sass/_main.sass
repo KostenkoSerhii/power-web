@@ -661,6 +661,7 @@ a
 	left: 0
 	&__overlay
 		height: 100%
+		background: rgba(0, 0, 0, 0.7)
 	&__content
 		position: absolute
 		text-align: center
@@ -690,6 +691,7 @@ a
 		border: 1px solid $blue-d
 		cursor: pointer
 		+trans
+		+nosel
 		+ld
 			height: 50px
 			width: 50px
@@ -779,6 +781,7 @@ a
 		line-height: 45px
 		color: $white
 		+trans
+
 		&:hover
 			background: $white
 			color: $red
@@ -787,3 +790,5 @@ a
 			height: 40px
 			line-height: 40px
 			font-size: 18px
+.body-is-hidden
+	overflow: hidden
