@@ -3,15 +3,17 @@
 	<!--begin ndropdown__wrapper-->
 	<div class="ndropdown__wrapper">
 		<div class="ndropdown__left">
-			{% import "data/data.html" as tests %}
-			{% for test in tests.list %}
-			<div class="dropitem {% if test.lastRow %}dropitem--last-row{% endif %}">
-				<div class="dropitem__img">
-					<img src="img/{{test.img}}.jpg" alt="alt">
+			<div class="ndropdown__list">
+				{% import "data/data.html" as tests %}
+				{% for test in tests.list %}
+				<a class="dropitem {% if test.lastRow %}dropitem--last-row{% endif %}" href="#">
+					<div class="dropitem__img">
+						<img src="img/{{test.img}}.jpg" alt="alt">
+					</div>
+					<p class="dropitem__text">{{test.title}}</p>
+				</a>
+				{% endfor %}
 				</div>
-				<a class="dropitem__text" href="#">{{test.title}}</a>
-			</div>
-			{% endfor %}
 		</div>
 
 		<div class="ndropdown__right" style="background-image: url('img/drop-img.jpg');">

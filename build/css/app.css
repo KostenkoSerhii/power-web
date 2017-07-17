@@ -1149,7 +1149,7 @@ a {
   fill: #325578;
   font-size: 20px;
   position: absolute;
-  left: -55px;
+  left: -47px;
   top: 43%;
   margin-top: -10px;
 }
@@ -1162,12 +1162,27 @@ a {
   transform: translateX(-50%);
 }
 
+.ndropdown__list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 .dropitem {
+  border: 2px solid transparent;
   width: 25%;
   text-align: center;
   display: inline-block;
   vertical-align: top;
   margin-bottom: 25px;
+  transition: all 0.2s ease;
+}
+
+.dropitem:hover {
+  border-color: #fc6001;
 }
 
 .dropitem--last-row {
@@ -3495,7 +3510,7 @@ a {
   }
   .ndropdown__right svg{
     font-size: 16px;
-    left: -42px;
+    left: -38px;
     margin-top: -8px;
   }
   .ndropdown__btn{
@@ -4311,7 +4326,7 @@ a {
   }
   .ndropdown__right svg{
     font-size: 13px;
-    left: -29px;
+    left: -26px;
   }
   .ndropdown__btn{
     bottom: 18px;
@@ -5140,10 +5155,17 @@ a {
   .ndropdown__right{
     display: none;
   }
+  .ndropdown__right svg{
+    display: none;
+  }
+  .ndropdown__list{
+    display: block;
+  }
   .dropitem{
     display: block;
     width: 100%;
     margin-bottom: 0;
+    border: none;
   }
   .dropitem__img{
     display: none;

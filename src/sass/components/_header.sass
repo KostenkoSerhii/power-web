@@ -235,16 +235,21 @@
 			fill: $blue
 			font-size: 20px
 			position: absolute
-			left: -55px
+			//left: -55px
+			left: -47px
 			top: 43%
 			margin-top: -10px
 			+ld
 				font-size: 16px
-				left: -42px
+				//left: -42px
+				left: -38px
 				margin-top: -8px
 			+dm
 				font-size: 13px
-				left: -29px
+				//left: -29px
+				left: -26px
+			+m
+				display: none
 	&__btn
 		position: absolute
 		bottom: 35px
@@ -254,18 +259,29 @@
 			bottom: 28px
 		+dm
 			bottom: 18px
+	&__list
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		+m
+			display: block
 .dropitem
+	border: 2px solid transparent
 	width: 25%
 	text-align: center
 	display: inline-block
 	vertical-align: top
 	margin-bottom: 25px
+	+trans
 	+dm
 		margin-bottom: 12px
 	+m
 		display: block
 		width: 100%
 		margin-bottom: 0
+		border: none
+	&:hover
+		border-color: $orange
 	&--last-row
 		margin-bottom: 0
 		+dm
