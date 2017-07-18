@@ -824,7 +824,6 @@ a {
 
 .top-block {
   border-top: 1px solid #0c437b;
-  margin-top: -2px;
   padding-top: 23px;
   margin-bottom: 32px;
 }
@@ -1022,6 +1021,7 @@ a {
 
 .header {
   padding-top: 6px;
+  margin-bottom: -2px;
 }
 
 .header__wrapper {
@@ -1248,7 +1248,6 @@ a {
 .slider-block {
   position: relative;
   margin-bottom: 5px;
-  margin-top: -2px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
